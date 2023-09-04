@@ -47,9 +47,7 @@ const SignUp = () => {
           <button type="submit">인증번호 받기</button>
         </div>
         <div className="ConfirmSignUp">
-          <button type="submit" onClick={() => alert("회원가입")}>
-            회원가입
-          </button>
+          <button type="submit" onClick={() => alert("회원가입")}>회원가입</button>
         </div>
       </form>
     </>
