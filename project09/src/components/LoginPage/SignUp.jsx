@@ -5,10 +5,14 @@ import "./SignUp.css";
 const SignUp = () => {
   const [id, setId] = useState("");
 
+  const returnPage = () => {
+     
+  }
+
   return (
     <>
       <div className="logo">
-        <img src={MainLogo} alt="09's logo" />
+        <img src={MainLogo} alt="09's logo" onClick={returnPage}/>
       </div>
       <form method="get">
         <div className="InputId">

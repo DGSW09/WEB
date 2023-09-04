@@ -56,7 +56,7 @@ const Login = () => {
   return (
     <div className="page">
       <div className="titleWrap">
-        <img src={MainLogo} />
+        <img src={MainLogo} alt="09's MainLogo" />
       </div>
       <div className="contentWrap">
         <div className="inputTitle">이메일주소</div>
@@ -83,6 +83,7 @@ const Login = () => {
             placeholder="영문, 숫자, 특수문자 포함 8자 이상"
             value={pw}
             onChange={handlePassword}
+            type="password"
           />
         </div>
         <div className="errorMessageWrap">
