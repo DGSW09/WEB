@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Login.css";
+import MainLogo from "../logo.svg";
 
 const User = {
   email: "test@example.com",
@@ -55,9 +56,7 @@ const Login = () => {
   return (
     <div className="page">
       <div className="titleWrap">
-        이메일과 비밀번호를
-        <br />
-        입력해주세요
+        <img src={MainLogo} />
       </div>
       <div className="contentWrap">
         <div className="inputTitle">이메일주소</div>
