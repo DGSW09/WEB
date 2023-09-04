@@ -5,20 +5,16 @@ import "./SignUp.css";
 const SignUp = () => {
   const [id, setId] = useState("");
 
-  const returnPage = () => {
-     
-  }
-
   return (
     <>
       <div className="logo">
-        <img src={MainLogo} alt="09's logo" onClick={returnPage}/>
+        <img src={MainLogo} alt="09's logo" />
       </div>
       <form method="get">
         <div className="InputId">
           <input
             type="text"
-            placeholder="아이디"
+            placeholder="아이디 8자 이하"
             onChange={(e) => setId(e.target.value)}
             value={id}
             maxLength="8"
@@ -31,7 +27,11 @@ const SignUp = () => {
       </form>
       <form method="post">
         <div className="InputPw">
-          <input type="password" placeholder="비밀번호" maxLength="12" />
+          <input
+            type="password"
+            placeholder="비밀번호 12자 이하"
+            maxLength="12"
+          />
           <br />
           <input type="password" placeholder="비밀번호 확인" maxLength="12" />
         </div>
@@ -51,7 +51,9 @@ const SignUp = () => {
           <button type="submit">인증번호 받기</button>
         </div>
         <div className="ConfirmSignUp">
-          <button type="submit" onClick={() => alert("회원가입")}>회원가입</button>
+          <button type="submit" onClick={() => alert("회원가입")}>
+            회원가입
+          </button>
         </div>
       </form>
     </>
