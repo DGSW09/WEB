@@ -7,6 +7,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./MainPage.css";
 import { useState } from "react";
 
+
 const MainPage = () => {
   const [search, setSearch] = useState("");
 
