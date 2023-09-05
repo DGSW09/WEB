@@ -1,8 +1,6 @@
 import MainLogo from "../logo.svg";
 import profile from "../profile.svg";
 import Menu from "../menu.svg";
-import L_Arrow from "../L_Arrow.svg";
-import R_Arrow from "../R_Arrow.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./MainPage.css";
@@ -29,8 +27,8 @@ const MainPage = () => {
           <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />
         </div>
         <div className="navMenu">
-          <img src={profile} className="profile" />
-          <img src={Menu} className="menubar" />
+          <img src={profile} className="profile" alt="" />
+          <img src={Menu} className="menubar" alt="" />
         </div>
       </div>
     </>

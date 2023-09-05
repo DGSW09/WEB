@@ -1,3 +1,8 @@
+* {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .topNav {
   width: 0;
   height: 0;
