@@ -13,6 +13,7 @@ const MainPage = () => {
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
+    console.log(e.target.value);
   };
   return (
     <>
