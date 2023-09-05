@@ -14,7 +14,7 @@
 
 .topNav > .inputWrap {
   width: 850px;
-  height: 25px;
+  height: 20px;
   border-radius: 5px;
   border: 3px solid #53389e;
   position: absolute;
@@ -33,6 +33,7 @@
 .topNav > .inputWrap > .searchIcon {
   width: 25px;
   height: 25px;
+  margin-top: -2px;
   box-sizing: border-box;
 }
 
