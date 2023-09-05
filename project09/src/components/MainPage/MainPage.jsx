@@ -32,10 +32,6 @@ const MainPage = () => {
           <img src={Menu} className="menubar" />
         </div>
       </div>
-      <div className="adBanner">
-        <img src={L_Arrow} alt="" className="L_Arrow" />
-        <img src={R_Arrow} alt="" className="R_Arrow" />
-      </div>
     </>
   );
 };
