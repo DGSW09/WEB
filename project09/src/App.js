@@ -1,12 +1,9 @@
-import Login from "./components/LoginPage/Login";
-import MainPage from "./components/MainPage/MainPage";
-import SignUp from "./components/LoginPage/SignUp";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      {/* <SignUp /> */}
-      <MainPage />
+      <a />
     </div>
   );
 }
