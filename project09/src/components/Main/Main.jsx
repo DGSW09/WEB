@@ -3,7 +3,7 @@ import "./productInfo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-const productInfo = () => {
+const Main = () => {
   return (
     <div className="productInfoWrap">
       <img src={logo} alt="" />
@@ -30,4 +30,4 @@ const productInfo = () => {
   );
 };
 
-export default productInfo;
+export default Main;

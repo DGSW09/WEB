@@ -1,10 +1,10 @@
 import React from "react";
-import ProductInfo from "./components/productInfo/productInfo.jsx";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
     <div className="App">
-      <ProductInfo />
+      <Main />
     </div>
   );
 }
