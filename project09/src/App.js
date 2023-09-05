@@ -1,9 +1,10 @@
-import "./App.css";
-import Login from "./components/LoginPage/Login";
+import React from "react";
+import ProductInfo from "./components/productInfo/productInfo.jsx";
+
 function App() {
   return (
     <div className="App">
-      <Login />
+      <ProductInfo />
     </div>
   );
 }
