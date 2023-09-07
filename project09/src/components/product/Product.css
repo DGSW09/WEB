@@ -1,0 +1,49 @@
+.ProductInfoWrap > .back {
+  width: 30px;
+  height: 30px;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+
+.ProductInfoWrap > .WrapTitle {
+  color: #585858;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  width: 120px;
+  height: 30px;
+  margin-left: 65px;
+  margin-top: -34px;
+}
+
+.ProductInfoWrap > .productPicture > img {
+  width: 400px;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 500px;
+}
+
+.ProductInfoWrap > .productInfo {
+  width: 100%;
+  height: 595px;
+  border-radius: 20px 20px 0px 0px;
+  background: #fff;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ProductInfoWrap > .productInfo > .productTitle {
+  color: #585858;
+  font-family: Pretendard-Variable;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  margin-left: 276px;
+  /* margin-top: 304px; */
+  width: 120px;
+  height: 30px;
+}
