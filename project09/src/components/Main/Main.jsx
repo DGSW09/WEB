@@ -1,14 +1,23 @@
 import logo from "../../img/logo.png";
-import product from "../../img/jetti.png";
+import search from "../../img/search.png";
 import "./Main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Main = () => {
   return (
-    <div className="productInfoWrap">
+    <div className="productInfoWrap" style={{ overflowX: "visible" }}>
       <img src={logo} alt="" />
       <input type="text" className="input" />
+      <img
+        src={search}
+        style={{
+          width: "20px",
+          height: "20px",
+          position: "absolute",
+          top: "26px",
+        }}
+      />
       <div className="userMenu">
         <FontAwesomeIcon icon={faUser} className="profile" />
         <FontAwesomeIcon icon={faBars} className="menubar" />
