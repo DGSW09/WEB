@@ -1,6 +1,6 @@
 import logo from "../../img/logo.png";
 import search from "../../img/search.png";
-import "./Main.css";
+import "../../styles/Main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
