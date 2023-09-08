@@ -1,6 +1,7 @@
 import "../../styles/Product.css";
 import Back from "../../img/back.png";
 import productPicture from "../../img/jetti.svg";
+import { Route } from "react-router-dom";
 
 let toggle;
 
@@ -20,7 +21,7 @@ const Product = () => {
 
   return (
     <div className="ProductInfoWrap">
-      <img src={Back} className="back" />
+      <img src={Back} className="back" onClick={Route}/>
       <div className="WrapTitle">상세페이지</div>
       <div className="productPicture">
         <img src={productPicture} />

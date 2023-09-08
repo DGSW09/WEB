@@ -78,6 +78,7 @@
   align-items: center;
   float: left;
   background-image: url("../img/jetti.svg");
+  background-size: 200px;
   background-repeat: no-repeat;
 }
 

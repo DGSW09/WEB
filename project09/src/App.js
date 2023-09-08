@@ -5,8 +5,8 @@ import Product from "./components/product/Product";
 function App() {
   return (
     <div className="App">
-      {/* <Main /> */}
-      <Product />
+      <Main />
+      {/* <Product /> */}
     </div>
   );
 }
