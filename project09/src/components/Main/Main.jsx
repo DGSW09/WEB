@@ -6,7 +6,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Main = () => {
   return (
-    <div className="productInfoWrap" style={{ overflowX: "visible" }}>
+    <div className="productInfoWrap">
       <img src={logo} alt="" />
       <input type="text" className="input" />
       <img
