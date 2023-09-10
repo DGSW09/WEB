@@ -5,6 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Main = () => {
+  const NextSlde = (pSlde) => {
+    const nSlde = document.querySelectorAll(".num");
+    for (let i = 0; i < nSlde.length; i++) {
+      nSlde[i].style.display = "none";
+    }
+    nSlde[pSlde - 1].style.display = "block";
+  };
+
   return (
     <div className="productInfoWrap">
       <img src={logo} alt="" />
@@ -49,11 +57,11 @@ const Main = () => {
           <div className="member">1/2</div>
         </div>
         <div className="nextmenu">
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
+          <div className="num" onClick={NextSlde}></div>
+          <div className="num" onClick={NextSlde}></div>
+          <div className="num" onClick={NextSlde}></div>
+          <div className="num" onClick={NextSlde}></div>
+          <div className="num" onClick={NextSlde}></div>
         </div>
       </div>
     </div>
