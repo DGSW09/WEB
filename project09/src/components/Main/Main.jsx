@@ -56,6 +56,64 @@ const Main = (props) => {
           <div className="num"></div>
         </div>
       </div>
+      <h6 className="nowProductTitle">현재 추천 상품</h6>
+      <div className="nowProduct">
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="pd">
+          <div className="productTitle">제티 2박스</div>
+          <div className="productPrice">₩ 9,920</div>
+          <div className="productN">1/N : ₩4,960</div>
+          <div className="member">1/2</div>
+        </div>
+        <div className="nextmenu">
+          <div className="num"></div>
+          <div className="num"></div>
+          <div className="num"></div>
+          <div className="num"></div>
+          <div className="num"></div>
+        </div>
+      </div>
     </div>
   );
 };
