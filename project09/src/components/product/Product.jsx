@@ -10,18 +10,16 @@ const Product = () => {
     const BankAccount = document.getElementById("Join");
     if (!toggle) {
       BankAccount.innerText = "참여하기";
-      console.log("clicked 참여하기");
       toggle = true;
     } else {
       BankAccount.innerText = "7777023773096 카카오뱅크";
-      console.log("clicked 카뱅");
       toggle = false;
     }
   };
 
   return (
     <div className="ProductInfoWrap">
-      <img src={Back} className="back" onClick={Route}/>
+      <img src={Back} className="back" onClick={Route} />
       <div className="WrapTitle">상세페이지</div>
       <div className="productPicture">
         <img src={productPicture} />
