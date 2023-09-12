@@ -13,7 +13,7 @@ const Main = () => {
         <img src={search} className="searchIcon" alt="" />
         <div className="userMenu">
           <img src={profile} className="profile" alt="" />
-          <FontAwesomeIcon icon={faBars} className="menubar" color="#ffffff" />
+          <FontAwesomeIcon icon={faBars} className="menumbar" color="#ffffff" />
         </div>
       </div>
       <div></div>
