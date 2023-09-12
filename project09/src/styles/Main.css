@@ -4,19 +4,36 @@
   height: 100%;
 }
 
-.productInfoWrap > img {
+.productInfoWrap > .TopNav {
+  background-image: url("../img/TopNav.png");
+  background-repeat: repeat;
+  background-size: cover;
+  width: 1480px;
+  height: 280px;
+  margin-bottom: -50px;
+}
+
+.productInfoWrap > .TopNav > .logo {
   width: 170px;
   height: 75px;
   margin-left: 70px;
-  margin-top: 20px;
+  margin-top: 110px;
 }
 
-.productInfoWrap > .input {
+.productInfoWrap > .TopNav > .searchIcon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 140px;
+  left: 320px;
+}
+
+.productInfoWrap > .TopNav > .input {
   position: absolute;
   width: 800px;
   height: 40px;
   margin-left: 60px;
-  margin-top: 35px;
+  margin-top: 130px;
   background: #f0efef;
   border-radius: 5px;
   border: none;
@@ -24,7 +41,7 @@
   padding-left: 10px;
 }
 
-.productInfoWrap > .userMenu {
+.productInfoWrap > .TopNav > .userMenu {
   margin-left: 1200px;
   width: 300px;
   padding-left: 10px;
@@ -32,7 +49,7 @@
   height: 25px;
 }
 
-.productInfoWrap > .userMenu > .profile {
+.productInfoWrap > .TopNav > .userMenu > .profile {
   margin-left: 5px;
   margin-right: 100px;
   margin-top: -5px;
@@ -41,7 +58,7 @@
   cursor: pointer;
 }
 
-.productInfoWrap > .userMenu > .menubar {
+.productInfoWrap > .TopNav > .userMenu > .menubar {
   margin-left: 5px;
   margin-right: 100px;
   margin-top: -5px;
@@ -52,7 +69,7 @@
 
 .productInfoWrap > .recProduct {
   width: 100%;
-  border-top: 3px solid #8277ff;
+  /* border-top: 3px solid #8277ff; */
 }
 
 .productInfoWrap > .recentProductTitle {
@@ -172,7 +189,7 @@
 
 .productInfoWrap > .nowProduct {
   width: 100%;
-  border-top: 3px solid #8277ff;
+  /* border-top: 3px solid #8277ff; */
 }
 
 .productInfoWrap > .nowProduct > .pd {

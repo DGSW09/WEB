@@ -2,26 +2,21 @@ import logo from "../../img/logo.png";
 import search from "../../img/search.png";
 import "../../styles/Main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Main = (props) => {
   return (
     <div className="productInfoWrap">
-      <img src={logo} alt="" />
-      <input type="text" className="input" />
-      <img
-        src={search}
-        style={{
-          width: "20px",
-          height: "20px",
-          position: "absolute",
-          top: "26px",
-        }}
-      />
-      <div className="userMenu">
-        <FontAwesomeIcon icon={faUser} className="profile" />
-        <FontAwesomeIcon icon={faBars} className="menubar" />
+      <div className="TopNav">
+        <img src={logo} alt="" className="logo" />
+        <input type="text" className="input" />
+        <img src={search} className="searchIcon" />
+        <div className="userMenu">
+          <FontAwesomeIcon icon={faCircleUser} className="profile" />
+          <FontAwesomeIcon icon={faBars} className="menubar" />
+        </div>
       </div>
+
       <h6 className="recentProductTitle">최근 본 상품</h6>
       <div className="recProduct">
         <div className="pd">
