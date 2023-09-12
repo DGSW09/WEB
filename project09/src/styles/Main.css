@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .productInfoWrap {
   position: absolute;
   overflow: scroll;
@@ -17,15 +22,15 @@
   width: 170px;
   height: 75px;
   margin-left: 70px;
-  margin-top: 110px;
+  margin-top: 90px;
 }
 
 .productInfoWrap > .TopNav > .searchIcon {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 140px;
-  left: 320px;
+  top: 120px;
+  left: 1115px;
 }
 
 .productInfoWrap > .TopNav > .input {
@@ -33,16 +38,19 @@
   width: 800px;
   height: 40px;
   margin-left: 60px;
-  margin-top: 130px;
+  margin-top: 110px;
   background: #f0efef;
   border-radius: 5px;
   border: none;
   outline: none;
   padding-left: 10px;
+  padding-right: 40px;
+  font-family: Pretendard-Variable;
+  font-weight: 700;
 }
 
 .productInfoWrap > .TopNav > .userMenu {
-  margin-left: 1200px;
+  /* margin-left: 1200px; */
   width: 300px;
   padding-left: 10px;
   margin-top: -50px;
@@ -50,21 +58,25 @@
 }
 
 .productInfoWrap > .TopNav > .userMenu > .profile {
-  margin-left: 5px;
+  margin-left: 1230px;
   margin-right: 100px;
-  margin-top: -5px;
-  width: 30px;
-  height: 30px;
+  margin-top: -10px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 
 .productInfoWrap > .TopNav > .userMenu > .menubar {
-  margin-left: 5px;
+  /* margin-left: 1390px;
   margin-right: 100px;
-  margin-top: -5px;
-  width: 30px;
-  height: 30px;
+  margin-top: -200px; */
+  left: 1390px;
+  right: 100px;
+  top: 106px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  position: absolute;
 }
 
 .productInfoWrap > .recProduct {
