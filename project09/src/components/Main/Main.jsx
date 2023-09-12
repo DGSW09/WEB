@@ -11,9 +11,9 @@ const Main = () => {
         <img src={logo} alt="" className="logo" />
         <input type="text" className="input" />
         <img src={search} className="searchIcon" alt="" />
-        <div className="userMenum">
+        <div className="userMenu">
           <img src={profile} className="profile" alt="" />
-          <FontAwesomeIcon icon={faBars} className="menumbar" color="#ffffff" />
+          <FontAwesomeIcon icon={faBars} className="menubar" color="#ffffff" />
         </div>
       </div>
       <div></div>
