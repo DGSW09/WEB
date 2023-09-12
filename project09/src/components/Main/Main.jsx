@@ -11,7 +11,7 @@ const Main = () => {
         <img src={logo} alt="" className="logo" />
         <input type="text" className="input" />
         <img src={search} className="searchIcon" alt="" />
-        <div className="userMenu">
+        <div className="userMenu" id="l"> #id나중에 지워
           <img src={profile} className="profile" alt="" />
           <FontAwesomeIcon icon={faBars} className="menubar" color="#ffffff" />
         </div>
