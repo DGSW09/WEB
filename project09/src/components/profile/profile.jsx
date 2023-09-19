@@ -1,11 +1,13 @@
-import "./profile.css";
-import React from 'react';
+import "../../styles/profile.css";
+import React from "react";
 
-const profile = () => {
+const Profile = () => {
+  return (
+    <>
+      <div></div>
+    </>
+  );
+};
 
-    return (
+export default Profile;
 
-    );
-}
-
-export default profile;
