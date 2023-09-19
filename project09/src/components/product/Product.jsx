@@ -25,8 +25,10 @@ const Product = () => {
       </div>
       <div className="productInfo">
         <div className="productTitle">제티 2박스</div>
+        <div className="ProductContent">존나존나 많은 제티 2박스요</div>
         <div className="productPrice">₩ 9,920</div>
         <div className="nPrice">1/N : ₩4,960</div>
+
         <div className="productLink">
           <a href="#">https://wowjety?-many.com/angrybird/</a>
         </div>

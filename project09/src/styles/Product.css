@@ -43,7 +43,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 1.05px;   
+  letter-spacing: 1.05px;
   margin-left: 276px;
   margin-top: 104px;
   width: 145px;
@@ -70,10 +70,22 @@
   font-weight: 500;
   line-height: normal;
   width: 185px;
-  height: 38.884px;
+  height: 38px;
   flex-shrink: 0;
   margin-left: 276px;
   margin-top: 11px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+.ProductInfoWrap > .productInfo > .ProductContent {
+  margin-top: 70px;
+  margin-left: 275px;
+  font-size: 23px;
+  font-family: Pretendard-Variable;
+  font-weight: 600;
+  line-height: normal;
+  height: 10px;
 }
 
 .ProductInfoWrap > .productInfo > .productLink > a {
@@ -89,6 +101,7 @@
 .ProductInfoWrap > .productInfo > .productLink {
   margin-left: 276px;
   margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .ProductInfoWrap > .productInfo > .nMember {

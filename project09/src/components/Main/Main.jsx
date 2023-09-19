@@ -4,6 +4,7 @@ import "../../styles/Main.css";
 import profile from "../../img/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Route } from "react-router-dom";
 const Main = () => {
   return (
     <div className="productInfoWrap">
