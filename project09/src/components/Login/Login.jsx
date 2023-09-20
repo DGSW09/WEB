@@ -31,6 +31,7 @@ const SignUp = () => {
               onChange={(e) => setGrade(e.target.value)}
               value={Grade}
               maxLength="1"
+              min="1"
             />
           </div>
           <div className="InputClass">
@@ -40,6 +41,7 @@ const SignUp = () => {
               onChange={(e) => setClass(e.target.value)}
               value={Class}
               maxLength="2"
+              min="1"
             />
           </div>
           <div className="start">

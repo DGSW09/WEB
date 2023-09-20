@@ -1,19 +1,19 @@
 * {
-    margin-bottom: 20px;
-    outline-color: #000;
-    outline-offset: 1px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
+  margin-bottom: 20px;
+  outline-color: #000;
+  outline-offset: 1px;
+}
 
-  .width {
-    width:100%;
-  }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
-  /* .logo {
+.width {
+  width: 100%;
+}
+
+/* .logo {
     color: #F88;
     font: Modak;
     font-size: 60px;
@@ -23,59 +23,76 @@
     filter: blur(2px);
   } */
 
-  .width>logo {
-    width: 200px;
-    height: 90px;
-    text-align: center;
-    align-items: center;
-  } 
-  
-  .logo {
-    margin-top: 110px;
-  }
-  
-  .InputName > input {
-    width:450px;
-    height:60px;
-    border: 1px solid #c1c1c1;
-    border-radius: 10px;
-    background: #fff;
-    /* color: #C1C1C1; */
-    font-size:17px;
-    align-items: center;
-  }
-  
-  .InputGrade > input {
-    width:450px;
-    height:60px;
-    border: 1px solid #c1c1c1;
-    border-radius: 10px;
-    background: #fff;
-    /* color: #C1C1C1; */
-    font-size:17px
-  }
+.width > logo {
+  width: 200px;
+  height: 90px;
+  text-align: center;
+  align-items: center;
+}
 
-  .InputClass > input {
-    width:450px;
-    height:60px;
-    border: 1px solid #c1c1c1;
-    border-radius: 10px;
-    background: #fff;
-    /* color: #C1C1C1; */
-    font-size:17px
-  }
-  
-  .start > button {
-    width: 250px;
-    height: 60px;
-    border-radius: 50px;
-    background: #8277FF;
-    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #fff;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    cursor: pointer;
-  }
+.logo {
+  margin-top: 110px;
+  text-align: center;
+}
+
+.InputName {
+  text-align: center;
+}
+
+.InputName > input {
+  width: 450px;
+  height: 60px;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  background: #fff;
+  /* color: #C1C1C1; */
+  font-size: 17px;
+  align-items: center;
+}
+
+.InputGrade {
+  text-align: center;
+}
+
+.InputGrade > input {
+  width: 450px;
+  height: 60px;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  background: #fff;
+  /* color: #C1C1C1; */
+  font-size: 17px;
+}
+
+.InputClass {
+  text-align: center;
+}
+
+.InputClass > input {
+  width: 450px;
+  height: 60px;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  background: #fff;
+  /* color: #C1C1C1; */
+  font-size: 17px;
+}
+
+.start {
+  text-align: center;
+}
+
+.start > button {
+  width: 250px;
+  height: 60px;
+  border-radius: 50px;
+  background: #8277ff;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
