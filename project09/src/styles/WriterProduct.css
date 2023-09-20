@@ -1,3 +1,8 @@
+* {
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
 .ProductInfoWrap > .back {
   width: 30px;
   height: 30px;
@@ -15,8 +20,9 @@
   letter-spacing: 0.75px;
   width: 120px;
   height: 30px;
-  margin-left: 65px;
-  margin-top: -34px;
+  left: 12px;
+  top: 53px;
+  position: absolute;
 }
 
 .ProductInfoWrap > .productPicture > img {
@@ -33,7 +39,8 @@
   background: #fff;
   box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
-  resize: vertical;
+  /* resize: vertical; */
+  overflow: hidden;
 }
 
 .ProductInfoWrap > .productInfo > .editIcon {

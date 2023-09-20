@@ -17,7 +17,6 @@ const Main = () => {
           <FontAwesomeIcon icon={faBars} className="menubar" color="#ffffff" />
         </div>
       </div>
-      <div></div>
       <h6 className="recentProductTitle">최근 본 상품</h6>
       <div className="recProduct">
         <div className="pd">

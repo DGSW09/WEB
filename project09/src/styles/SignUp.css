@@ -1,6 +1,11 @@
+.width {
+  text-align: center;
+}
+
 .width > .signup {
   border-radius: 50px;
   width: 100px;
   height: 100px;
   border: 1px solid #c1c1c1;
+  text-align: center;
 }
