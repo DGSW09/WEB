@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/profile.css";
-import logo from "../Logo/logo.png";
+// import logo from "../Logo/logo.png";
+import logo from "../../img/logo.png";
 
 const Login = () => {
   return (

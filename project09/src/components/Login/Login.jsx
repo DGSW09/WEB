@@ -1,5 +1,6 @@
 import { useState } from "react";
-import logo from "../Logo/logo.png";
+// import logo from "../Logo/logo.png";
+import logo from "../../img/logo.png";
 import "../../styles/Login.css";
 
 const SignUp = () => {
@@ -15,25 +16,31 @@ const SignUp = () => {
         </div>
         <form method="get">
           <div className="InputName">
-            <input type="text"
+            <input
+              type="text"
               placeholder="     Your Name"
               onChange={(e) => setName(e.target.value)}
               value={Name}
-              maxLength="4"/>
+              maxLength="4"
+            />
           </div>
           <div className="InputGrade">
-            <input type="number"
+            <input
+              type="number"
               placeholder="     Your Grade"
               onChange={(e) => setGrade(e.target.value)}
               value={Grade}
-              maxLength="1"/>
+              maxLength="1"
+            />
           </div>
           <div className="InputClass">
-            <input type="number"
+            <input
+              type="number"
               placeholder="     Your Class"
               onChange={(e) => setClass(e.target.value)}
               value={Class}
-              maxLength="2"/>
+              maxLength="2"
+            />
           </div>
           <div className="start">
             <button type="submit" onClick={() => alert("회원가입")}>
