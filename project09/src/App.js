@@ -8,6 +8,7 @@ import Login from "./components/Login/Login";
 import Profile from "./components/Profile/Profile";
 import User from "./components/User/User";
 import SignUp from "./components/SignUp/SignUp";
+import EditUser from "./components/User/EditUser";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="Profile" element={<Profile />} />
         <Route path="user" element={<User />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="edituser" element={<EditUser />} />
       </Routes>
     </BrowserRouter>
   );

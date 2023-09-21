@@ -7,9 +7,9 @@ const Login = () => {
   return (
     <div className="width height">
       <div className="logo">
-        <img src={logo} alt="09's logo" />
+        <img src={logo} alt="09's logo" className="logo" />
       </div>
-      <button className="signup">회원가입</button>
+      <button className="signupBtn">회원가입</button>
     </div>
   );
 };
