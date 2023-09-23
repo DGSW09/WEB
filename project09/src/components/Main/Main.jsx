@@ -3,8 +3,7 @@ import search from "../../img/search.png";
 import "../../styles/Main.css";
 import profile from "../../img/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Route } from "react-router-dom";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 const Main = () => {
   return (
     <div className="productInfoWrap">
@@ -14,10 +13,14 @@ const Main = () => {
         <img src={search} className="searchIcon" alt="" />
         <div className="userMenu">
           <img src={profile} className="profile" alt="" />
-          <FontAwesomeIcon icon={faBars} className="menubar" color="#ffffff" />
+          <FontAwesomeIcon
+            icon={faPenToSquare}
+            className="edit"
+            color="#000000"
+          />
         </div>
       </div>
-      <h6 className="recentProductTitle">최근 본 상품</h6>
+      <h6 className="recentProductTitle">최근에 본 상품</h6>
       <div className="recProduct">
         <div className="pd">
           <div className="productTitle">제티 2박스</div>

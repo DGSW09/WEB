@@ -1,1 +1,34 @@
+.EditUserWrap {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center space-evenly;
+  margin-top: 270px;
+}
 
+.UserPicture {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 10px;
+}
+
+.chagneImage {
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-family: Pretendard-Variable;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.userImage {
+  width: 200px;
+  height: 200px;
+}
+
+.EditInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-evenly;
+}
