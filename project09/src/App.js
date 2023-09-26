@@ -9,6 +9,7 @@ import Profile from "./components/Profile/Profile";
 import User from "./components/User/User";
 import SignUp from "./components/SignUp/SignUp";
 import EditUser from "./components/User/EditUser";
+import UploadProduct from "./components/Product/UploadProduct";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="user" element={<User />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="edituser" element={<EditUser />} />
+        <Route path="upload" element={<UploadProduct />} />
       </Routes>
     </BrowserRouter>
   );
