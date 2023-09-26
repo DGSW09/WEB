@@ -1,98 +1,108 @@
-* {
-  margin-bottom: 20px;
-  outline-color: #000;
-  outline-offset: 1px;
-}
-
-/* a {
-  text-decoration: none;
-  color: #fff;
-} */
-
-.width {
-  width: 100%;
-}
-
-/* .logo {
-    color: #F88;
-    font: Modak;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    filter: blur(2px);
-  } */
-
-.width > logo {
-  width: 200px;
-  height: 90px;
-  text-align: center;
-  align-items: center;
+.LoginWrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
-  margin-top: 110px;
-  text-align: center;
+  display: block;
+
+  margin-left: 640px;
+  margin-top: 120px;
+}
+
+.InputWrap {
+  display: grid;
+
+  justify-content: center;
 }
 
 .InputName {
-  text-align: center;
-}
-
-.InputName > input {
-  width: 450px;
+  width: 390px;
   height: 60px;
+  flex-shrink: 0;
+
   border: 1px solid #c1c1c1;
-  border-radius: 10px;
-  background: #fff;
-  /* color: #C1C1C1; */
-  font-size: 17px;
-  align-items: center;
+  border-radius: 7px;
+
+  display: block;
+
+  margin-top: 80px;
+
+  padding-left: 10px;
+
+  color: #c1c1c1;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .InputGrade {
-  text-align: center;
-}
-
-.InputGrade > input {
-  width: 450px;
+  width: 390px;
   height: 60px;
+  flex-shrink: 0;
+
   border: 1px solid #c1c1c1;
-  border-radius: 10px;
-  background: #fff;
-  /* color: #C1C1C1; */
-  font-size: 17px;
+  border-radius: 7px;
+
+  display: block;
+
+  margin-top: 50px;
+
+  padding-left: 10px;
+
+  color: #c1c1c1;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .InputClass {
-  text-align: center;
-}
-
-.InputClass > input {
-  width: 450px;
+  width: 390px;
   height: 60px;
+  flex-shrink: 0;
+
   border: 1px solid #c1c1c1;
-  border-radius: 10px;
-  background: #fff;
-  /* color: #C1C1C1; */
-  font-size: 17px;
+  border-radius: 7px;
+
+  display: block;
+
+  margin-top: 50px;
+
+  padding-left: 10px;
+
+  color: #c1c1c1;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .start {
-  text-align: center;
-}
+  width: 300px;
+  height: 70px;
 
-.start > button {
-  width: 250px;
-  height: 60px;
+  display: block;
+
+  margin-top: 50px;
+  margin-left: 50px;
+
+  border: none;
   border-radius: 50px;
+
   background: #8277ff;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+
   color: #fff;
-  font-family: Inter;
-  font-size: 18px;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
   cursor: pointer;
 }
