@@ -1,13 +1,11 @@
 import "../../styles/profile.css";
-import React from "react";
 
 const Profile = () => {
   return (
-    <>
-      <div></div>
-    </>
+    <div>
+      <div>프로필 페이지 입니다.</div>
+    </div>
   );
 };
 
 export default Profile;
-

@@ -1,34 +1,100 @@
 .EditUserWrap {
   display: flex;
+  flex-direction: row;
+
   justify-content: space-evenly;
-  justify-content: center space-evenly;
-  margin-top: 270px;
+
+  margin-top: 300px;
 }
 
+.EditUserWrap > .PageInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.EditUserWrap > .PageInfo > .back {
+  display: block;
+  margin-top: -290px;
+  margin-left: -220px;
+}
+
+.EditUserWrap > .PageInfo > .PageTitle {
+  display: inline-block;
+
+  margin-top: -291px;
+}
 .UserPicture {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-left: 10px;
-}
-
-.chagneImage {
-  width: 140px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  font-family: Pretendard-Variable;
-  font-weight: 600;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .userImage {
-  width: 200px;
-  height: 200px;
+  margin-bottom: 10%;
+  margin-left: -50px;
+}
+
+.chagneImage {
+  width: 138px;
+  height: 41px;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: Pretendard-Variable;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  border: none;
+  margin-left: -20px;
+
+  border-radius: 10px;
 }
 
 .EditInfo {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-content: space-evenly;
+
+  /* justify-self: space-evenly; */
+
+  width: 300px;
+  height: 280px;
+
+  margin-right: 3vw;
+}
+
+.EditInfo input {
+  border: 1px solid #8277ff;
+  border-radius: 5px;
+
+  margin-bottom: 20px;
+
+  width: 280px;
+  height: 80px;
+
+  padding-left: 10px;
+}
+
+.EditInfo button {
+  border: none;
+  border-radius: 20px;
+
+  width: 100px;
+  height: 50px;
+
+  align-self: flex-end;
+
+  background: #8277ff;
+  color: #fff;
+
+  text-align: center;
+  font-family: Pretendard-Variable;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.EditInfo input::placeholder {
+  margin-left: 10px;
 }
