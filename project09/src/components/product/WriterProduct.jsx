@@ -4,10 +4,14 @@ import ProductImage from "../../img/jetti.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 const writerProduct = () => {
+  const BackMain = () => {
+    window.location.replace("/");
+  }
+
   return (
     <div className="ProdcutWrap">
       <div className="PageInfo">
-        <img src={Back} className="back" />
+        <img src={Back} className="back" onClick={BackMain}/>
         <div className="PageTitle">상세페이지</div>
       </div>
       <div className="ProductInfo">

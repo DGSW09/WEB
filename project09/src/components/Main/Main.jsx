@@ -20,11 +20,21 @@ const Main = () => {
     window.location.replace("/upload");
   };
 
+  const handleOnClick = () => {
+    window.location.replace("/search");
+  };
+
+  const handleOnKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleOnClick();
+    }
+  };
+
   return (
     <div className="MainWrap">
       <div className="TopNav">
         <img src={logo} alt="09" id="Logo" onClick={ReloadPage} />
-        <input type="text" className="search" />
+        <input type="text" className="search" onKeyDown={handleOnKeyDown} />
         <img src={profile} className="profile" onClick={LoadToProfile} />
         <FontAwesomeIcon
           icon={faPenToSquare}

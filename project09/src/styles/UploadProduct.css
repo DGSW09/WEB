@@ -32,6 +32,8 @@
   line-height: normal;
 
   padding-left: 20px;
+
+  caret-color: transparent;
 }
 
 .InputTitle {
