@@ -1,6 +1,7 @@
 import "../../styles/Product.css";
 import Back from "../../img/back.png";
 import ProductImage from "../../img/jetti.svg";
+import { Children } from "react";
 let toggle;
 const Product = () => {
   const JoinComplete = () => {
@@ -18,10 +19,21 @@ const Product = () => {
     window.location.replace("/");
   };
 
+  const handleLinkTab = async () => {
+    let content = document.getElementById("Link").innerText;
+    try {
+      await navigator.clipboard.writeText(content);
+      alert("클립보드에 링크가 복사되었습니다.");
+      window.open();
+    } catch (e) {
+      alert("복사에 실패하였습니다");
+    }
+  };
+
   return (
     <div className="ProdcutWrap">
       <div className="PageInfo">
-        <img src={Back} className="back" onClick={BackMain}/>
+        <img src={Back} className="back" onClick={BackMain} />
         <div className="PageTitle">상세페이지</div>
       </div>
       <div className="ProductInfo">
@@ -29,7 +41,13 @@ const Product = () => {
         <div className="ProductInfo2">
           <div className="ProductTitle">제티 2박스</div>
           <div>
-            <a className="ProductLink" href="#">
+            <a
+              className="ProductLink"
+              onClick={() => {
+                handleLinkTab(Children);
+              }}
+              id="Link"
+            >
               https://wowjety?-many.com/angrybird/
             </a>
           </div>
