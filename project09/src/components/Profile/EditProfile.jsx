@@ -1,7 +1,13 @@
 import UserProfile from "../../img/profile.png";
 import Back from "../../img/back.png";
 import "../../styles/EditProfile.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const DummyUser = {
+  UserName: "전민찬",
+  UserGrade: 1,
+  UserClass: 3,
+};
 
 const EditProfile = () => {
   const BackMain = () => {
@@ -15,6 +21,7 @@ const EditProfile = () => {
   const [NameValid, setNameValid] = useState(false);
   const [GradeValid, setGradeValid] = useState(false);
   const [ClassValid, setClassValid] = useState(false);
+  const [NotAllow, setNotAllow] = useState(true);
 
   const selectFile = useRef(null);
   const [selectedImage, setSeletedImage] = useState(UserProfile);
@@ -93,6 +100,27 @@ const EditProfile = () => {
     return charCode >= 44032 && charCode <= 55203;
   };
 
+  useEffect(() => {
+    if (NameValid && GradeValid && ClassValid) {
+      setNotAllow(false);
+      return;
+    }
+    setNotAllow(true);
+  }, [NameValid, GradeValid, ClassValid]);
+
+  const onClickConfirmButton = () => {
+    if (
+      Name === DummyUser.UserName &&
+      Grade === DummyUser.UserGrade &&
+      Class === DummyUser.UserClass
+    ) {
+      alert("현재의 프로필과 정보가 같습니다.");
+    } else {
+      alert("정보가 성공적으로 변경되었습니다.");
+      window.location.replace("/profile");
+    }
+  };
+
   return (
     <div className="EditProfileWrap">
       <div className="PageInfo">
@@ -151,10 +179,8 @@ const EditProfile = () => {
         </div>
         <button
           type="submit"
-          onClick={() => {
-            alert("저장 되었습니다");
-            window.location.replace("/profile");
-          }}
+          onClick={onClickConfirmButton}
+          disabled={NotAllow}
         >
           저장
         </button>

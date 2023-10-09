@@ -102,6 +102,26 @@
   line-height: normal;
 }
 
+.EditInfo button:disabled {
+  border: none;
+  border-radius: 10px;
+
+  width: 100px;
+  height: 65px;
+
+  align-self: flex-end;
+
+  background: rgb(152, 150, 150);
+  color: #fff;
+
+  text-align: center;
+  font-family: Pretendard-Variable;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .EditInfo input::placeholder {
   margin-left: 10px;
 }
