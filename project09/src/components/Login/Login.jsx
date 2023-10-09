@@ -1,53 +1,155 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../img/logo.png";
 import "../../styles/Login.css";
+
+const DummyUser = {
+  UserName: "전민찬",
+  UserGrade: 1,
+  UserClass: 3,
+};
 
 const SignUp = () => {
   const [Name, setName] = useState("");
   const [Grade, setGrade] = useState("");
   const [Class, setClass] = useState("");
 
+  const [NameValid, setNameValid] = useState(false);
+  const [GradeValid, setGradeValid] = useState(false);
+  const [ClassValid, setClassValid] = useState(false);
+  const [NotAllow, setNotAllow] = useState(true);
+
+  const HandleName = (e) => {
+    setName(e.target.value);
+    if (Name.length === 3) {
+      setNameValid(true);
+    } else {
+      setNameValid(false);
+    }
+  };
+
+  const HandleGrade = (e) => {
+    const inputValue = e.target.value;
+    let newGrade;
+
+    if (inputValue === "") {
+      newGrade = "";
+    } else {
+      newGrade = parseInt(inputValue, 10) || 0;
+    }
+
+    setGrade(newGrade);
+
+    if (newGrade >= 1 && newGrade <= 3) {
+      setGradeValid(true);
+    } else {
+      setGradeValid(false);
+    }
+  };
+
+  const HandleClass = (e) => {
+    const inputValue = e.target.value;
+    let newClass;
+
+    if (inputValue === "") {
+      newClass = "";
+    } else {
+      newClass = parseInt(inputValue, 10) || 0;
+    }
+
+    setClass(newClass);
+
+    if (newClass >= 1 && newClass <= 15) {
+      setClassValid(true);
+    } else {
+      setClassValid(false);
+    }
+  };
+
+  const HandleInputChange = (e) => {
+    const inputChar = e.key;
+    const isKorean = isKoreanChar(inputChar);
+
+    if (!isKorean) {
+      e.preventDefault();
+    }
+  };
+
+  const isKoreanChar = (char) => {
+    const charCode = char.charCodeAt(0);
+    return charCode >= 44032 && charCode <= 55203;
+  };
+
+  useEffect(() => {
+    if (NameValid && GradeValid && ClassValid) {
+      setNotAllow(false);
+      return;
+    }
+    setNotAllow(true);
+  }, [NameValid, GradeValid, ClassValid]);
+
+  const onClickConfirmButton = () => {
+    if (
+      Name === DummyUser.UserName &&
+      Grade === DummyUser.UserGrade &&
+      Class === DummyUser.UserClass
+    ) {
+      alert("로그인 성공");
+      window.location.replace("/");
+    } else {
+      alert("등록된 회원 정보가 없습니다.\n회원정보를 다시 확인하여 주십시오.");
+    }
+  };
+
   return (
     <div className="LoginWrap">
       <div className="logo">
         <img src={logo} alt="09's logo" />
       </div>
-      <form method="get" className="InputWrap">
+      <div className="LoginInputWrap">
         <input
           type="text"
           placeholder="이름을 입력하세요."
-          onChange={(e) => setName(e.target.value)}
+          onChange={HandleName}
+          onKeyPress={HandleInputChange}
           value={Name}
-          maxLength="4"
           className="InputName"
         />
+        <div className="ErrorMessageWrap">
+          {!NameValid && Name.length < 3 && (
+            <div>이름을 정확히 입력해주십시오.</div>
+          )}
+        </div>
         <input
-          type="number"
+          type="text"
           placeholder="학년을 입력하세요"
-          onChange={(e) => setGrade(e.target.value)}
+          onChange={HandleGrade}
           value={Grade}
-          min="1"
           className="InputGrade"
         />
+        <div className="ErrorMessageWrap">
+          {!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}
+        </div>
         <input
-          type="number"
+          type="text"
           placeholder="학반을 입력하세요"
-          onChange={(e) => setClass(e.target.value)}
+          onChange={HandleClass}
           value={Class}
-          max="99"
-          min="1"
           className="InputClass"
         />
+        <div className="ErrorMessageWrap">
+          {!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}
+        </div>
         <div>
           <button
             type="submit"
-            onClick={() => alert("회원가입")}
+            onClick={onClickConfirmButton}
+            disabled={NotAllow}
             className="start"
           >
             시작하기!
           </button>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

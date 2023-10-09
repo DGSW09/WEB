@@ -10,10 +10,10 @@
   margin-top: 120px;
 }
 
-.InputWrap {
+.LoginInputWrap {
   display: grid;
 
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .InputName {
@@ -79,6 +79,40 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+}
+
+.LoginInputWrap > .ErrorMessageWrap {
+  display: block;
+
+  font-size: 5px;
+  font-family: Pretendard-Variable;
+  font-weight: 400;
+
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.start:disabled {
+  width: 300px;
+  height: 70px;
+
+  display: block;
+
+  margin-top: 50px;
+  margin-left: 50px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: rgb(171, 170, 170);
+
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
 }
 
