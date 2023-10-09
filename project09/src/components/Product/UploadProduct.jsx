@@ -3,9 +3,11 @@ import Back from "../../img/back.png";
 import { useRef } from "react";
 const UploadProduct = () => {
   const FileSelect = useRef("");
+
   const BackMain = () => {
     window.location.replace("/");
   };
+  
   return (
     <div className="UploadProductWrap">
       <div className="PageInfo">

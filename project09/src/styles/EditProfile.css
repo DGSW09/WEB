@@ -1,4 +1,4 @@
-.EditUserWrap {
+.EditProfileWrap {
   display: flex;
   flex-direction: row;
 
@@ -7,18 +7,18 @@
   margin-top: 300px;
 }
 
-.EditUserWrap > .PageInfo {
+.EditProfileWrap > .PageInfo {
   display: flex;
   flex-direction: row;
 }
 
-.EditUserWrap > .PageInfo > .back {
+.EditProfileWrap > .PageInfo > .back {
   display: block;
   margin-top: -290px;
   margin-left: -220px;
 }
 
-.EditUserWrap > .PageInfo > .PageTitle {
+.EditProfileWrap > .PageInfo > .PageTitle {
   display: inline-block;
 
   margin-top: -291px;
@@ -28,12 +28,17 @@
   flex-direction: column;
 }
 
-.userImage {
+.UserPicture > .userImage {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 100px;
+
   margin-bottom: 10%;
   margin-left: -50px;
 }
 
-.chagneImage {
+.changeImage {
   width: 138px;
   height: 41px;
   flex-shrink: 0;
@@ -79,10 +84,10 @@
 
 .EditInfo button {
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 
   width: 100px;
-  height: 50px;
+  height: 65px;
 
   align-self: flex-end;
 
@@ -99,4 +104,15 @@
 
 .EditInfo input::placeholder {
   margin-left: 10px;
+}
+
+.ErrorMessageWrap {
+  color: rgb(255, 30, 30);
+  font-size: 5px;
+  font-family: Pretendard-=Variable;
+  font-weight: 400;
+
+  display: block;
+  margin-top: -5%;
+  margin-bottom: 5%;
 }

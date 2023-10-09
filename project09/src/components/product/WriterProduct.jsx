@@ -3,22 +3,31 @@ import Back from "../../img/back.png";
 import ProductImage from "../../img/jetti.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+
 const writerProduct = () => {
   const BackMain = () => {
     window.location.replace("/");
-  }
+  };
+
+  const LoadToEdit = () => {
+    window.location.replace("/editproduct");
+  };
 
   return (
     <div className="ProdcutWrap">
       <div className="PageInfo">
-        <img src={Back} className="back" onClick={BackMain}/>
+        <img src={Back} className="back" onClick={BackMain} />
         <div className="PageTitle">상세페이지</div>
       </div>
       <div className="ProductInfo">
         <img src={ProductImage} className="productImage" />
         <div className="ProductInfo2">
           <div className="ProductTitle">제티 2박스</div>
-          <FontAwesomeIcon icon={faPenToSquare} className="editIcon" />
+          <FontAwesomeIcon
+            icon={faPenToSquare}
+            className="editIcon"
+            onClick={LoadToEdit}
+          />
           <div>
             <a className="ProductLink" href="#">
               https://wowjety?-many.com/angrybird/
