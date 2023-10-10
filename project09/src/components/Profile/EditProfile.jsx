@@ -37,11 +37,13 @@ const EditProfile = () => {
     if (file) {
       reader.readAsDataURL(file);
     }
+
+    // console.log(file);
   };
 
   const HandleName = (e) => {
     setName(e.target.value);
-    if (Name.length === 3) {
+    if (Name.length === 2) {
       setNameValid(true);
     } else {
       setNameValid(false);
@@ -97,7 +99,7 @@ const EditProfile = () => {
 
   const isKoreanChar = (char) => {
     const charCode = char.charCodeAt(0);
-    return charCode >= 44032 && charCode <= 55203;
+    return charCode >= 44032 && charCode <= 55300;
   };
 
   useEffect(() => {
@@ -153,9 +155,7 @@ const EditProfile = () => {
           className="EditName"
         />
         <div className="ErrorMessageWrap">
-          {!NameValid && Name.length < 3 && (
-            <div>이름을 정확히 입력해주십시오.</div>
-          )}
+          {!NameValid && <div>이름을 정확히 입력해주십시오.</div>}
         </div>
         <input
           type="text"

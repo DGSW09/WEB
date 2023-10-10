@@ -24,7 +24,7 @@ const Product = () => {
     try {
       await navigator.clipboard.writeText(content);
       alert("클립보드에 링크가 복사되었습니다.");
-      window.open();
+      window.open(content);
     } catch (e) {
       alert("복사에 실패하였습니다");
     }
