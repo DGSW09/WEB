@@ -1,0 +1,93 @@
+.UserInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.UserInfo > .userImage {
+  width: 200px;
+  height: 200px;
+
+  display: block;
+
+  margin-top: 7%;
+  margin-left: 13%;
+}
+
+.schoolInfo {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
+.UserName {
+  color: #000;
+  font-family: Pretendard-Variable;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 10%;
+}
+
+.UserGradeAndClass {
+  color: #585858;
+  font-family: Pretendard-Variable;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin-bottom: 25%;
+}
+
+.EditProfile {
+  width: 140px;
+  height: 40px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  background: #ebebeb;
+
+  margin-left: -25%;
+
+  color: #000;
+  font-family: Pretendard-Variable "굴림";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.UploadProductTitle,
+.JoinProductTitle {
+  color: #8277ff;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.9px;
+
+  margin-left: 13%;
+  margin-top: 10%;
+}
+
+.UploadProduct,
+.JoinProduct {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  align-content: space-evenly;
+
+  margin-top: 3%;
+}
+
+.UploadProduct > .pd:first-child,
+.JoinProduct > .pd:first-child {
+  margin-left: 12%;
+}
