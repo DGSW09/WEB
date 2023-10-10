@@ -43,7 +43,7 @@
   height: 60px;
 
   border: 2px solid #c1c1c1;
-  border-radius: 5px;
+  border-radius: 10px;
 
   margin-bottom: 100px;
   margin-left: -20px;
@@ -55,6 +55,8 @@
   font-weight: 500;
   line-height: normal;
 
+  margin-top: 25%;
+
   padding-left: 20px;
 }
 
@@ -65,7 +67,7 @@
   height: 60px;
 
   border: 2px solid #c1c1c1;
-  border-radius: 5px;
+  border-radius: 10px;
 
   margin-bottom: 20px;
   margin-left: -20px;
@@ -87,7 +89,7 @@
   height: 160px;
 
   border: 2px solid #c1c1c1;
-  border-radius: 5px;
+  border-radius: 10px;
 
   margin-bottom: 80px;
   margin-left: -20px;

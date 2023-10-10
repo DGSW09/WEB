@@ -7,25 +7,25 @@ const UploadProduct = () => {
   const BackMain = () => {
     window.location.replace("/");
   };
-  
+
+  const Upload = () => {
+    alert("작성되었습니다.");
+  };
+
   return (
     <div className="UploadProductWrap">
       <div className="PageInfo">
-        <img
-          src={Back}
-          className="back"
-          onClick={BackMain}
-        />
+        <img src={Back} className="back" onClick={BackMain} />
         <div className="PageTitle">게시물 작성</div>
       </div>
       <form method="get">
         <div className="UploadProductInfo">
-          <input type="file" style={{ display: "none" }} ref={FileSelect} />
+          {/* <input type="file" style={{ display: "none" }} ref={FileSelect} />
           <input
             className="SelectImage"
             placeholder="사진을 첨부하세요"
             onClick={() => FileSelect.current.click()}
-          />
+          /> */}
           <input
             type="text"
             className="InputTitle"
@@ -41,7 +41,7 @@ const UploadProduct = () => {
             className="InputContent"
             placeholder="내용을 작성하세요"
           />
-          <button className="UploadProductBtn" type="submit">
+          <button className="UploadProductBtn" type="submit" onClick={Upload}>
             작성하기
           </button>
         </div>
