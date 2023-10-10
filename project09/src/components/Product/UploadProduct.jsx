@@ -13,36 +13,22 @@ const UploadProduct = () => {
   };
 
   return (
-    <div className="UploadProductWrap">
-      <div className="PageInfo">
-        <img src={Back} className="back" onClick={BackMain} />
-        <div className="PageTitle">게시물 작성</div>
+    <div className='UploadProductWrap'>
+      <div className='PageInfo'>
+        <img src={Back} className='back' onClick={BackMain} />
+        <div className='PageTitle'>게시물 작성</div>
       </div>
-      <form method="get">
-        <div className="UploadProductInfo">
-          {/* <input type="file" style={{ display: "none" }} ref={FileSelect} />
-          <input
-            className="SelectImage"
-            placeholder="사진을 첨부하세요"
-            onClick={() => FileSelect.current.click()}
-          /> */}
-          <input
-            type="text"
-            className="InputTitle"
-            placeholder="제목을 입력하세요"
-          />
-          <input
-            type="text"
-            className="InputLink"
-            placeholder="링크를 입력하세요"
-          />
-          <input
-            type="text"
-            className="InputContent"
-            placeholder="내용을 작성하세요"
-          />
-          <button className="UploadProductBtn" type="submit" onClick={Upload}>
-            작성하기
+      <form method='get'>
+        <div className='UploadProductInfo'>
+          <input type='file' style={{ display: "none" }} ref={FileSelect} />
+          <button className='SelectImage' onClick={() => FileSelect.current.click()}>사진 첨부하기</button>
+          <input type='text' className='InputTitle' placeholder='제목을 입력하세요' />
+          <input type='text' className='InputLink' placeholder='링크를 입력하세요' />
+          <input type='text' className='InputPrice' placeholder='가격를 입력하세요' />
+          <input type='text' className='InputMember' placeholder='참여인원을 입력하세요' />
+          <input type='text' className='InputContent' placeholder='내용을 작성하세요' />
+          <button className='UploadProductBtn' type='submit' onClick={Upload}>
+            게시하기
           </button>
         </div>
       </form>

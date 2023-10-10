@@ -32,95 +32,91 @@ const Main = () => {
   };
 
   return (
-    <div className="MainWrap">
-      <div className="TopNav">
-        <img src={logo} alt="09" id="Logo" onClick={ReloadPage} />
-        <input type="text" className="search" onKeyDown={handleOnKeyDown} />
-        <img src={profile} className="profile" onClick={LoadToProfile} />
-        <FontAwesomeIcon
-          icon={faPenToSquare}
-          className="upload"
-          onClick={LoadToUpload}
-        />
+    <div className='MainWrap'>
+      <div className='TopNav'>
+        <img src={logo} alt='09' id='Logo' onClick={ReloadPage} />
+        <input type='text' className='search' onKeyDown={handleOnKeyDown} />
+        <img src={profile} className='profile' onClick={LoadToProfile} />
+        <FontAwesomeIcon icon={faPenToSquare} className='upload' onClick={LoadToUpload} color='#ffffff' />
       </div>
-      <div className="recentProductTitle">최근에 본 상품</div>
-      <div className="recentProdcut">
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+      <div className='recentProductTitle'>최근에 본 상품</div>
+      <div className='recentProdcut'>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="nextmenu">
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
+        <div className='nextmenu'>
+          <div className='num'></div>
+          <div className='num'></div>
+          <div className='num'></div>
+          <div className='num'></div>
+          <div className='num'></div>
         </div>
       </div>
-      <h6 className="nowProductTitle">현재 추천 상품</h6>
-      <div className="nowProduct">
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+      <h6 className='nowProductTitle'>현재 추천 상품</h6>
+      <div className='nowProduct'>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="pd" onClick={LoadToProduct}>
-          <div className="productTitle">제티 2박스</div>
-          <div className="productPrice">₩ 9,920</div>
-          <div className="productN">1/N : ₩4,960</div>
+        <div className='pd' onClick={LoadToProduct}>
+          <div className='productTitle'>제티 2박스</div>
+          <div className='productPrice'>₩ 9,920</div>
+          <div className='productN'>1/N : ₩4,960</div>
         </div>
-        <div className="nextmenu">
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
-          <div className="num"></div>
+        <div className='nextmenu'>
+          <div className='num'></div>
+          <div className='num'></div>
+          <div className='num'></div>
+          <div className='num'></div>
+          <div className='num'></div>
         </div>
       </div>
     </div>
