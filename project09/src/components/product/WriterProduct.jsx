@@ -3,6 +3,7 @@ import Back from "../../img/back.png";
 import ProductImage from "../../img/jetti.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { Children } from "react";
 
 const writerProduct = () => {
   const BackMain = () => {
@@ -29,7 +30,7 @@ const writerProduct = () => {
             onClick={LoadToEdit}
           />
           <div>
-            <a className="ProductLink" href="#">
+            <a className="ProductLink" id="Link">
               https://wowjety?-many.com/angrybird/
             </a>
           </div>
