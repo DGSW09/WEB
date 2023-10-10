@@ -87,7 +87,7 @@ const SignUp = () => {
     setNotAllow(true);
   }, [NameValid, GradeValid, ClassValid]);
 
-  const onClickConfirmButton = () => {
+  const ConfirmLogin = () => {
     if (
       Name === DummyUser.UserName &&
       Grade === DummyUser.UserGrade &&
@@ -142,7 +142,7 @@ const SignUp = () => {
         <div>
           <button
             type="submit"
-            onClick={onClickConfirmButton}
+            onClick={ConfirmLogin}
             disabled={NotAllow}
             className="start"
           >
