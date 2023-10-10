@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../img/logo.png";
 import profile from "../../img/profile.png";
+
 const Main = () => {
   const ReloadPage = () => {
     window.location.reload();
