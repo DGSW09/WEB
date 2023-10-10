@@ -38,7 +38,7 @@
 
   background: #f0efef;
 
-  font-family: Pretendard-Variable;
+  font-family: Pretendard-Variable, "굴림";
   font-weight: 700;
 }
 
@@ -64,7 +64,7 @@
 
 .recentProductTitle {
   color: #8277ff;
-  font-family: Pretendard;
+  font-family: Pretendard, "굴림";
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -111,7 +111,7 @@
   margin-left: 10px;
 
   color: #000;
-  font-family: Pretendard-Variable;
+  font-family: Pretendard-Variable, "굴림";
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -123,7 +123,7 @@
   margin-left: 10px;
 
   color: #000;
-  font-family: Pretendard-Variable;
+  font-family: Pretendard-Variable, "굴림";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -135,7 +135,7 @@
   margin-left: 10px;
 
   color: #5849ff;
-  font-family: Pretendard;
+  font-family: Pretendard, "굴림";
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
@@ -170,7 +170,7 @@
 
 .nowProductTitle {
   color: #8277ff;
-  font-family: Pretendard;
+  font-family: Pretendard, "굴림";
   font-size: 30px;
   font-style: normal;
   font-weight: 900;

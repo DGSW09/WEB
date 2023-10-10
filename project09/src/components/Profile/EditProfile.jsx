@@ -43,7 +43,7 @@ const EditProfile = () => {
 
   const HandleName = (e) => {
     setName(e.target.value);
-    if (Name.length === 2) {
+    if (Name.length >= 2) {
       setNameValid(true);
     } else {
       setNameValid(false);
@@ -111,11 +111,7 @@ const EditProfile = () => {
   }, [NameValid, GradeValid, ClassValid]);
 
   const onClickConfirmButton = () => {
-    if (
-      Name === DummyUser.UserName &&
-      Grade === DummyUser.UserGrade &&
-      Class === DummyUser.UserClass
-    ) {
+    if (Name === DummyUser.UserName && Grade === DummyUser.UserGrade && Class === DummyUser.UserClass) {
       alert("현재의 프로필과 정보가 같습니다.");
     } else {
       alert("정보가 성공적으로 변경되었습니다.");
@@ -124,64 +120,33 @@ const EditProfile = () => {
   };
 
   return (
-    <div className="EditProfileWrap">
-      <div className="PageInfo">
-        <img src={Back} className="back" onClick={BackMain} alt="" />
-        <div className="PageTitle">프로필 수정</div>
+    <div className='EditProfileWrap'>
+      <div className='PageInfo'>
+        <img src={Back} className='back' onClick={BackMain} alt='' />
+        <div className='PageTitle'>프로필 수정</div>
       </div>
-      <div className="UserPicture">
-        <img src={selectedImage} className="userImage" alt="" />
-        <input
-          type="file"
-          style={{ display: "none" }}
-          ref={selectFile}
-          onChange={handleImageChange}
-        />
-        <button
-          type="button"
-          className="changeImage"
-          onClick={() => selectFile.current.click()}
-        >
+      <div className='UserPicture'>
+        <img src={selectedImage} className='userImage' alt='' />
+        <input type='file' style={{ display: "none" }} ref={selectFile} onChange={handleImageChange} />
+        <button type='button' className='changeImage' onClick={() => selectFile.current.click()}>
           사진 변경
         </button>
       </div>
-      <div className="EditInfo">
+      <div className='EditInfo'>
         <input
-          type="text"
-          placeholder="이름입력"
+          type='text'
+          placeholder='이름입력'
           onChange={HandleName}
           onKeyPress={HandleInputChange}
           value={Name}
-          className="EditName"
+          className='EditName'
         />
-        <div className="ErrorMessageWrap">
-          {!NameValid && <div>이름을 정확히 입력해주십시오.</div>}
-        </div>
-        <input
-          type="text"
-          placeholder="학년입력"
-          onChange={HandleGrade}
-          value={Grade}
-          className="EditGrade"
-        />
-        <div className="ErrorMessageWrap">
-          {!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}
-        </div>
-        <input
-          type="text"
-          placeholder="학반입력"
-          onChange={HandleClass}
-          value={Class}
-          className="EditClass"
-        />
-        <div className="ErrorMessageWrap">
-          {!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}
-        </div>
-        <button
-          type="submit"
-          onClick={onClickConfirmButton}
-          disabled={NotAllow}
-        >
+        <div className='ErrorMessageWrap'>{!NameValid && <div>이름을 정확히 입력해주십시오.</div>}</div>
+        <input type='text' placeholder='학년입력' onChange={HandleGrade} value={Grade} className='EditGrade' />
+        <div className='ErrorMessageWrap'>{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
+        <input type='text' placeholder='학반입력' onChange={HandleClass} value={Class} className='EditClass' />
+        <div className='ErrorMessageWrap'>{!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}</div>
+        <button type='submit' onClick={onClickConfirmButton} disabled={NotAllow}>
           저장
         </button>
       </div>

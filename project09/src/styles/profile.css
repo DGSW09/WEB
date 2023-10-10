@@ -23,7 +23,7 @@
 
 .UserName {
   color: #000;
-  font-family: Pretendard-Variable;
+  font-family: Pretendard-Variable, "굴림";
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -34,7 +34,7 @@
 
 .UserGradeAndClass {
   color: #585858;
-  font-family: Pretendard-Variable;
+  font-family: Pretendard-Variable, "굴림";
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -51,10 +51,10 @@
   border-radius: 5px;
   background: #ebebeb;
 
-  margin-left: -25%;
+  margin-left: -21%;
 
   color: #000;
-  font-family: Pretendard-Variable "굴림";
+  font-family: Pretendard-Variable, "굴림";
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -64,7 +64,7 @@
 .UploadProductTitle,
 .JoinProductTitle {
   color: #8277ff;
-  font-family: Pretendard;
+  font-family: Pretendard, "굴림";
   font-size: 30px;
   font-style: normal;
   font-weight: 900;

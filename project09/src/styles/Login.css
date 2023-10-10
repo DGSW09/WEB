@@ -31,7 +31,7 @@
   padding-left: 10px;
 
   color: #c1c1c1;
-  font-family: Inter;
+  font-family: Inter, "굴림";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +53,7 @@
   padding-left: 10px;
 
   color: #c1c1c1;
-  font-family: Inter;
+  font-family: Inter, "굴림";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -75,7 +75,7 @@
   padding-left: 10px;
 
   color: #c1c1c1;
-  font-family: Inter;
+  font-family: Inter, "굴림";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -86,7 +86,7 @@
   display: block;
 
   font-size: 5px;
-  font-family: Pretendard-Variable;
+  font-family: Pretendard-Variable, "굴림";
   font-weight: 400;
 
   margin-top: 10px;
@@ -109,7 +109,7 @@
 
   color: #fff;
   text-align: center;
-  font-family: Pretendard;
+  font-family: Pretendard, "굴림";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -132,7 +132,7 @@
 
   color: #fff;
   text-align: center;
-  font-family: Pretendard;
+  font-family: Pretendard, "굴림";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
