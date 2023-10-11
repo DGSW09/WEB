@@ -13,6 +13,23 @@
   margin-left: 18vw;
 }
 
+.ProfileWrap > .PageInfo > .PageTitle {
+  color: #ffffff;
+}
+
+
+.ProfileWrap > .PageInfo {
+  width: 1480px;
+  height: 230px;
+
+  background-image: url(../img/TopNav.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -10vh;
+}
+
+
+
 .schoolInfo {
   display: flex;
   flex-direction: column;

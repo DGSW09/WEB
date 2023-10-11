@@ -3,11 +3,21 @@
   flex-direction: column;
 }
 
-.logo {
+.LoginWrap > .TopNav {
+  background-position: 0 -15vh;
+
+  width: 1480px;
+  height: 230px;
+}
+
+.LoginWrap > .logo {
   display: block;
 
-  margin-left: 640px;
-  margin-top: 120px;
+  margin-left: 630px;
+  margin-top: -7vh;
+
+  width: 203px;
+  height: 90px;
 }
 
 .LoginInputWrap {
@@ -26,7 +36,7 @@
 
   display: block;
 
-  margin-top: 80px;
+  margin-top: 5vh;
 
   padding-left: 10px;
 

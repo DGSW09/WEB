@@ -1,6 +1,7 @@
 import "../../styles/profile.css";
 import Back from "../../img/back.png";
 import profile from "../../img/profile.png";
+import Modal from "react-modal";
 
 const BackMain = () => {
   window.location.replace("/");
@@ -11,7 +12,7 @@ const LoadToEditProfile = () => {
 };
 
 const LoadToProduct = () => {
-  window.location.replace("/");
+  window.location.replace("/product");
 };
 
 const Profile = () => {
