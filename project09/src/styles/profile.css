@@ -17,18 +17,13 @@
   color: #ffffff;
 }
 
+.ProfileWrap > .TopNav {
+  margin-top: -10vh;
+  height: 300px;
 
-.ProfileWrap > .PageInfo {
-  width: 1480px;
-  height: 230px;
-
-  background-image: url(../img/TopNav.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -10vh;
+  color: #fff;
+  position: relative;
 }
-
-
 
 .schoolInfo {
   display: flex;
@@ -104,9 +99,4 @@
   align-content: space-evenly;
 
   margin-top: 3%;
-}
-
-.UploadProduct > .pd:first-child,
-.JoinProduct > .pd:first-child {
-  margin-left: 12%;
 }

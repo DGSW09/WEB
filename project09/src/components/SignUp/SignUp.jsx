@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/SignUp.css";
 import logo from "../../img/logo.png";
-import styled from "styled-components";
 const SignUpWithGoogle = () => {
   window.location.replace("https://account.google.com");
 };

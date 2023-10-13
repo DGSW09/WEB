@@ -1,24 +1,23 @@
 import "../../styles/profile.css";
 import Back from "../../img/back.png";
 import profile from "../../img/profile.png";
-import Modal from "react-modal";
-
-const BackMain = () => {
-  window.location.replace("/");
-};
-
-const LoadToEditProfile = () => {
-  window.location.replace("/editprofile");
-};
-
-const LoadToProduct = () => {
-  window.location.replace("/product");
-};
 
 const Profile = () => {
+  const BackMain = () => {
+    window.location.replace("/");
+  };
+
+  const LoadToEditProfile = () => {
+    window.location.replace("/profile/edit");
+  };
+
+  const LoadToProduct = () => {
+    window.location.replace("/product");
+  };
+
   return (
     <div className='ProfileWrap'>
-      <div className='PageInfo'>
+      <div className='TopNav'>
         <img src={Back} className='back' onClick={BackMain} alt='' />
         <div className='PageTitle'>내 프로필</div>
       </div>

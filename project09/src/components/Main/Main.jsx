@@ -18,11 +18,11 @@ const Main = () => {
   };
 
   const LoadToUpload = () => {
-    window.location.replace("/upload");
+    window.location.replace("/product/upload");
   };
 
   const handleOnClick = () => {
-    window.location.replace("/search");
+    window.location.replace("/main/search");
   };
 
   const handleOnKeyDown = (e) => {
@@ -36,7 +36,7 @@ const Main = () => {
       <div className='TopNav'>
         <img src={logo} alt='09' id='Logo' onClick={ReloadPage} />
         <input type='text' className='search' onKeyDown={handleOnKeyDown} />
-        <img src={profile} className='profile' onClick={LoadToProfile} />
+        <img src={profile} className='profile' onClick={LoadToProfile} alt=""/>
         <FontAwesomeIcon icon={faPenToSquare} className='upload' onClick={LoadToUpload} color='#ffffff' />
       </div>
       <div className='recentProductTitle'>최근에 본 상품</div>

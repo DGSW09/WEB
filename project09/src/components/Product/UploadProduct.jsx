@@ -16,7 +16,7 @@ const UploadProduct = () => {
   return (
     <div className='UploadProductWrap'>
       <div className='PageInfo'>
-        <img src={Back} className='back' onClick={BackMain} />
+        <img src={Back} className='back' onClick={BackMain} alt=""/>
         <div className='PageTitle'>게시물 작성</div>
       </div>
       <div className='UploadProductInfo'>
