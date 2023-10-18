@@ -1,20 +1,26 @@
-import React from "react";
-import "../../styles/SignUp.css";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { GoogleLogin } from "@react-oauth/google";
 import logo from "../../img/logo.png";
-const SignUpWithGoogle = () => {
-  window.location.replace("https://account.google.com");
-};
-
-const Login = () => {
+import "../../styles/SignUp.css";
+// import axios from "axios";
+const SignUp = () => {
   return (
-    <div className='SignUpWrap'>
-      <div className='TopNav'></div>
+    <div className='signUpWrapper'>
       <img src={logo} alt="09's logo" className='logo' />
-      <button className='signupBtn' onClick={SignUpWithGoogle}>
-        회원가입
-      </button>
+      <div>
+        <GoogleOAuthProvider clientId='46330787138-22m388pdr4ssrehscaaksg1nbfr3qn03.apps.googleusercontent.com'>
+          <GoogleLogin
+            onSuccess={(credentialResponse) => {
+              console.log(credentialResponse);
+            }}
+            onError={() => {
+              console.log("Login Failed");
+            }}
+          />
+        </GoogleOAuthProvider>
+      </div>
     </div>
   );
 };
 
-export default Login;
+export default SignUp;
