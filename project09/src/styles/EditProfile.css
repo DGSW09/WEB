@@ -1,0 +1,17 @@
+.EditProfileWrap > .TopNav {
+  height: 40vh;
+
+  margin-top: -15vh;
+  margin-left: -8vw;
+
+  color: #fff;
+  position: relative;
+
+  background-image: url("../img/TopNav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: row;
+}

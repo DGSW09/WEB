@@ -121,9 +121,9 @@ const EditProfile = () => {
 
   return (
     <div className='EditProfileWrap'>
-      <div className='PageInfo'>
+      <div className='TopNav'>
         <img src={Back} className='back' onClick={BackMain} alt='' />
-        <div className='PageTitle'>프로필 수정</div>
+        <div className='PageTitle'>내 프로필</div>
       </div>
       <div className='UserPicture'>
         <img src={selectedImage} className='userImage' alt='' />
@@ -132,6 +132,7 @@ const EditProfile = () => {
           사진 변경
         </button>
       </div>
+
       <div className='EditInfo'>
         <input
           type='text'
