@@ -1,102 +1,103 @@
+.ProfileWrap {
+  margin: 0;
+  padding: 0;
+}
+
+.ProfileWrap > .TopNav {
+  height: 40vh;
+
+  margin-top: -15vh;
+  margin-left: -8vw;
+
+  color: #fff;
+  position: relative;
+
+  background-image: url("../img/TopNav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.back {
+  margin-top: 16vh;
+  margin-left: 8.6vw;
+
+  width: 2vh;
+  height: 2vh;
+}
+
+.PageTitle {
+  margin-top: 16.2vh;
+  margin-left: 1.6vw;
+
+  font-size: 0.9vw;
+  font-family: Pretendard-Variable, sans-serif;
+  font-weight: 600;
+}
+
 .UserInfo {
   display: flex;
   flex-direction: row;
 }
 
 .UserInfo > .userImage {
-  width: 170px;
-  height: 170px;
+  width: 7vw;
+  height: 7vw;
 
-  display: block;
-
-  margin-top: 16vh;
-  margin-left: 18vw;
+  margin-left: 15vw;
 }
 
-.ProfileWrap > .PageInfo > .PageTitle {
-  color: #ffffff;
-}
+.UserInfo > .schoolInfo {
+  margin-left: 9vw;
 
-.ProfileWrap > .TopNav {
-  margin-top: -10vh;
-  height: 300px;
-
-  color: #fff;
-  position: relative;
-}
-
-.schoolInfo {
   display: flex;
   flex-direction: column;
 
-  margin-top: 10%;
+  font-family: Pretendard, sans-serif;
 }
 
-.UserName {
-  color: #000;
-  font-family: Pretendard-Variable, "굴림";
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
-  margin-bottom: 5%;
-  margin-left: 6vw;
-  margin-top: 1%;
-}
-
-.UserGradeAndClass {
-  color: #585858;
-  font-family: Pretendard-Variable, "굴림";
-  font-size: 1rem;
-  font-style: normal;
+.schoolInfo > .UserName {
+  margin-top: 0.5vh;
+  font-size: 1.4vw;
   font-weight: 500;
-  line-height: normal;
-
-  margin-left: 6vw;
-  margin-bottom: 5vh;
 }
 
-.EditProfile {
-  width: 140px;
-  height: 40px;
-  display: block;
+.schoolInfo > .UserGradeAndClass {
+  font-size: 0.7vw;
+  font-weight: 400;
+  font-family: Pretendard-Variable, sans-serif;
+
+  margin-top: 3vh;
+}
+
+.schoolInfo > .EditProfile {
+  margin-top: 5vh;
+
+  width: 4vw;
+  height: 2vh;
+
   border: none;
+  border-radius: 0.2vw;
+
+  font-size: 0.5vw;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.UploadProduct {
+  width: 12vw;
+  height: 30vh;
+
+  margin-right: 7vw;
+
+  border: 1px solid #000;
   border-radius: 5px;
-  background: #ebebeb;
 
-  margin-left: 6vw;
-
-  color: #000;
-  font-family: Pretendard-Variable, "굴림";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.UploadProductTitle,
-.JoinProductTitle {
-  color: #8277ff;
-  font-family: Pretendard, "굴림";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 0.9px;
-
-  margin-left: 13%;
-  margin-top: 10%;
-}
-
-.UploadProduct,
-.JoinProduct {
-  display: flex;
-  flex-direction: row;
-
-  flex-wrap: wrap;
-
-  align-content: space-evenly;
-
-  margin-top: 3%;
+  background-image: url("../img/jetti.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }

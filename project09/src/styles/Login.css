@@ -1,152 +1,95 @@
 .LoginWrap {
   display: flex;
+
   flex-direction: column;
+
+  margin-left: 43vw;
+  margin-top: 25vh;
 }
 
 .LoginWrap > .TopNav {
-  background-position: 0 -15vh;
+  margin-top: -40vh;
+  margin-left: -45vw;
 
-  width: 1480px;
-  height: 230px;
+  width: 105vw;
+  height: 35vh;
+
+  background-image: url("../img/TopNav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.LoginWrap > .logo {
-  display: block;
+.logo {
+  width: 13vw;
+  height: 10vh;
 
-  margin-left: 630px;
-  margin-top: -7vh;
-
-  width: 203px;
-  height: 90px;
+  margin-bottom: 6vh;
 }
 
 .LoginInputWrap {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 
-  justify-content: space-evenly;
+  margin-left: -7vw;
 }
 
-.InputName {
-  width: 390px;
-  height: 60px;
-  flex-shrink: 0;
+.LoginInputWrap input {
+  width: 25vw;
+  height: 6vh;
 
-  border: 1px solid #c1c1c1;
-  border-radius: 7px;
+  padding-left: 1vw;
+  margin-bottom: 1vh;
 
-  display: block;
+  border-radius: 5px;
+  border: 2px solid #c1c1c1;
 
-  margin-top: 5vh;
-
-  padding-left: 10px;
-
-  color: #c1c1c1;
-  font-family: Inter, "굴림";
+  color: #000;
+  font-family: Inter;
   font-size: 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
-.InputGrade {
-  width: 390px;
-  height: 60px;
-  flex-shrink: 0;
-
-  border: 1px solid #c1c1c1;
-  border-radius: 7px;
-
-  display: block;
-
-  margin-top: 50px;
-
-  padding-left: 10px;
-
+.LoginInputWrap input::placeholder {
   color: #c1c1c1;
-  font-family: Inter, "굴림";
-  font-size: 15px;
+  font-family: Inter;
+  font-size: 0.7vw;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
-.InputClass {
-  width: 390px;
-  height: 60px;
-  flex-shrink: 0;
+.ErrorMessageWrap {
+  color: rgb(233, 77, 77);
 
-  border: 1px solid #c1c1c1;
-  border-radius: 7px;
+  font-size: 0.6vw;
 
   display: block;
-
-  margin-top: 50px;
-
-  padding-left: 10px;
-
-  color: #c1c1c1;
-  font-family: Inter, "굴림";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.LoginInputWrap > .ErrorMessageWrap {
-  display: block;
-
-  font-size: 5px;
-  font-family: Pretendard-Variable, "굴림";
-  font-weight: 400;
-
-  margin-top: 10px;
-  margin-bottom: -10px;
-}
-
-.start:disabled {
-  width: 300px;
-  height: 70px;
-
-  display: block;
-
-  margin-top: 50px;
-  margin-left: 50px;
-
-  border: none;
-  border-radius: 50px;
-
-  background: rgb(171, 170, 170);
-
-  color: #fff;
-  text-align: center;
-  font-family: Pretendard, "굴림";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  margin-bottom: 3vh;
 }
 
 .start {
-  width: 300px;
-  height: 70px;
+  width: 15vw;
+  height: 6vh;
 
-  display: block;
-
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 6vw;
+  margin-top: 3vh;
 
   border: none;
-  border-radius: 50px;
+  border-radius: 30px;
 
   background: #8277ff;
 
   color: #fff;
   text-align: center;
-  font-family: Pretendard, "굴림";
-  font-size: 20px;
+  font-family: Pretendard-Variable;
+  font-size: 1vw;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
+}
 
-  cursor: pointer;
+.start:disabled {
+  background-color: rgb(198, 190, 190);
 }

@@ -16,7 +16,7 @@ const EditProduct = () => {
   return (
     <div className='EditProductWrap'>
       <div className='PageInfo'>
-        <img src={Back} className='back' onClick={BackMain} />
+        <img src={Back} className='back' onClick={BackMain} alt=""/>
         <div className='PageTitle'>게시물 수정</div>
       </div>
       <form method='get'>

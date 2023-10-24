@@ -1,6 +1,6 @@
-.ProductWrap {
-  display: flex;
-  flex-direction: row;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .PageInfo {
@@ -8,27 +8,20 @@
   flex-direction: row;
 }
 
-.back {
-  width: 25px;
-  height: 25px;
+.PageInfo > .back {
+  width: 30px;
+  height: 30px;
 
-  display: inline;
-
-  margin-left: 10px;
-  margin-top: 13px;
+  margin-left: 2vw;
+  margin-top: 2vh;
 }
 
-.PageTitle {
-  width: 120px;
-  height: 25px;
-
-  display: inline-block;
-
-  margin-left: 13px;
-  margin-top: 10px;
+.PageInfo > .PageTitle {
+  margin-left: 1vw;
+  margin-top: 2vh;
 
   color: #585858;
-  font-family: Pretendard, "굴림";
+  font-family: Pretendard-Variable, "굴림";
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -36,129 +29,146 @@
   letter-spacing: 0.75px;
 }
 
-.ProductInfo {
-  display: flex;
-  flex-direction: column;
+.ProductInfo > .productImage {
+  width: 60vw;
+  height: 43vh;
+
+  margin-top: 5vh;
+  margin-left: 19vw;
 }
 
-.productImage {
-  width: 500px;
-  height: 400px;
+.ProductCommu {
+  display: flex;
+  flex-direction: row;
 
-  display: block;
+  width: 101vw;
+  height: 5vh;
 
-  margin-left: 500px;
-  margin-top: 10px;
+  border-radius: 20px 20px 0px 0px;
+  background: #fff;
+  box-shadow: 1px 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ProductCommu > .member {
+  margin-left: 87vw;
+  margin-top: 1.5vh;
+  margin-right: 2vw;
+
+  color: #585858;
+  font-family: Pretendard-Variable;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.ProductCommu > .comment {
+  width: 1.7vw;
+  height: 1.7vw;
+
+  margin-top: 1vh;
 }
 
 .ProductInfo2 {
-  width: 100%;
-  height: 800px;
+  width: 101vw;
+  height: 70vh;
 
-  border: none;
-  border-radius: 20px 20px 0px 0px;
   background: #fff;
-  box-shadow: 0px -4px 40px 0px rgba(0, 0, 0, 0.1);
 
-  overflow: scroll;
+  position: absolute;
 }
 
-.ProductTitle {
-  color: #000;
-  font-family: Pretendard, "굴림";
-  font-size: 45px;
+.ProductInfo2 > .ProductTitle {
+  color: #585858;
+  font-family: Pretendard-Variable;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.05px;
 
-  display: block;
-
-  margin-left: 270px;
-  margin-top: 130px;
+  margin-left: 20vw;
+  margin-top: 7vh;
 }
 
-.ProductLink {
-  color: #5849ff;
-  font-family: Pretendard-Variable, "굴림";
+.ProductInfo2 > .ProductContent {
+  color: #888;
+  font-family: Pretendard-Variable;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
-  display: block;
-
-  margin-left: 270px;
-  margin-top: 70px;
+  margin-left: 20vw;
+  margin-top: 4vh;
 }
 
-.ProductPrice {
+.ProductInfo2 > .ProductLink {
+  color: #5849ff;
+  font-family: Pretendard-Variable;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+
+  margin-left: 20vw;
+  margin-top: 8vh;
+}
+
+.ProductInfo2 > .ProductPrice {
   color: #000;
-  font-family: Pretendard, "굴림";
-  font-size: 35px;
+  font-family: Pretendard-Variable;
+  font-size: 45px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.5px;
 
-  margin-left: 270px;
-  margin-top: 30px;
+  margin-left: 20vw;
+  margin-top: 3vh;
 }
 
-.nProductPrice {
+.ProductInfo2 > .nProductPrice {
   color: #5849ff;
-  font-family: Pretendard-Variable, "굴림";
+  font-family: Pretendard-Variable;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 
-  margin-left: 270px;
+  margin-left: 20vw;
+  margin-top: 3vh;
 }
 
-.ProductContent {
-  color: #585858;
-  font-family: Pretendard-Variable, "굴림";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.ProductInfo2 > .WriterName {
+  margin-left: 20vw;
+  margin-top: 10vh;
 
-  margin-left: 270px;
-  margin-top: 150px;
-}
-
-.member {
   color: #888;
-  font-family: Pretendard-Variable, "굴림";
-  font-size: 20px;
+  font-family: Pretendard-Variable;
+  font-size: 15px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
-
-  display: block;
-
-  margin-left: 160px;
 }
 
-.join {
+.ProductInfo2 > .join {
+  width: 25vw;
+  height: 5vh;
+
+  margin-left: 37vw;
+  margin-top: 10vh;
+
+  border-radius: 10px;
+  border: none;
+  background: #8277ff;
+
   color: #fff;
-  font-family: Pretendard, "굴림";
+  text-align: center;
+  font-family: Pretendard-Variable;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-
-  width: 570px;
-  height: 50.633px;
-  flex-shrink: 0;
-
-  border: none;
-  border-radius: 5px;
-
-  margin-left: 450px;
-  margin-top: 70px;
-
-  border-radius: 5px;
-  background: #8277ff;
 }

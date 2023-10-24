@@ -1,48 +1,13 @@
-.SignUpWrap {
+.signUpWrapper {
   display: flex;
   flex-direction: column;
-  width: 1480px;
-  height: 832px;
-
-  /* margin-top: 315px; */
 }
 
-.SignUpWrap > .TopNav {
-  background-position: 0 -10vh;
-
-  display: block;
-}
-
-.SignUpWrap > .logo {
-  display: block;
-
+.signUpWrapper > .logo {
   margin: 0 auto;
-  margin-bottom: 20px;
-
-  width: 200px;
-  height: 90px;
+  margin-top: 20vh;
 }
 
-.SignUpWrap > .signupBtn {
-  width: 300px;
-  height: 70px;
-
-  margin: 0 auto;
-
-  border: none;
-  border-radius: 50px;
-
-  background: #8277ff;
-  background-image: url("../img/google.png");
-  background-repeat: no-repeat;
-  background-size: 50px 50px;
-  background-position: 25px;
-
-  color: #fff;
-  font-family: Pretendard-Variable, "굴림";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-align: center;
+.haAclf {
+  margin-left: 20vw;
 }

@@ -8,7 +8,7 @@ const DummyUser = {
   UserClass: 3,
 };
 
-const SignUp = () => {
+const Login = () => {
   const [Name, setName] = useState("");
   const [Grade, setGrade] = useState("");
   const [Class, setClass] = useState("");
@@ -137,4 +137,4 @@ const SignUp = () => {
     </div>
   );
 };
-export default SignUp;
+export default Login;

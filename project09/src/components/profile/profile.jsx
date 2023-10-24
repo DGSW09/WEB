@@ -44,7 +44,7 @@ const Profile = () => {
           <div className='productN'>1/N : ₩4,960</div>
         </div>
       </div>
-      <div className='JoinProductTitle'>참여 중인 상품</div>
+      {/*<div className='JoinProductTitle'>참여 중인 상품</div>
       <div className='JoinProduct'>
         <div className='pd' onClick={LoadToProduct}>
           <div className='productTitle'>제티 2박스</div>
@@ -56,7 +56,7 @@ const Profile = () => {
           <div className='productPrice'>₩ 9,920</div>
           <div className='productN'>1/N : ₩4,960</div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
