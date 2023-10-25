@@ -6,7 +6,7 @@ export const Productcontent = ({ img, title, price, divprice, member }) => {
   return (
     <>
       <S.Product>
-        {/* <S.ProductImage src={img} /> */}
+        <S.ProductImage src={img} />
         <div className='productTitle'>{title}</div>
         <div className='productPrice'>{price}</div>
         <div className='One_In_N'>
@@ -17,7 +17,7 @@ export const Productcontent = ({ img, title, price, divprice, member }) => {
       <div className='deleteProduct'>
         <div>
           <FontAwesomeIcon icon={faPenToSquare} color='#ff000000' />
-          <button> 삭제</button>
+          <button>삭제</button>
         </div>
       </div>
     </>

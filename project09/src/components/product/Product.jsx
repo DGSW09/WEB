@@ -4,7 +4,9 @@ import ProductImage from "../../img/jetti.svg";
 import { Children } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments } from "@fortawesome/free-regular-svg-icons";
+import { faLessThanEqual, faSleigh } from "@fortawesome/free-solid-svg-icons";
 let toggle;
+let hoverToggle;
 const Product = () => {
   const HandleJoinComplete = () => {
     const JoinComplete = document.getElementById("Join");
@@ -15,24 +17,31 @@ const Product = () => {
       JoinComplete.style.border = "none";
       JoinComplete.style.color = "#FFF";
       toggle = false;
+      hoverToggle = false
     } else {
       //Click to Click
       JoinComplete.innerText = "참여 취소";
       JoinComplete.style.backgroundColor = "#fff";
       JoinComplete.style.border = "3px solid #8277FF";
       JoinComplete.style.color = "#585858";
+      hoverToggle = true
       //mouse Hover
-      JoinComplete.addEventListener("mouseover", function () {
-        JoinComplete.style.border = "3px solid #5849FF";
-        JoinComplete.style.color = "#000";
-      });
-      //mouse Hover End
-      JoinComplete.addEventListener("mouseleave", function () {
-        JoinComplete.innerText = "참여 취소";
-        JoinComplete.style.backgroundColor = "#fff";
-        JoinComplete.style.border = "3px solid #8277FF";
-        JoinComplete.style.color = "#585858";
-      });
+      if(!hoverToggle){
+        JoinComplete.addEventListener("mouseover", function () {
+          JoinComplete.style.border = "3px solid #5849FF";
+          JoinComplete.style.color = "#000";
+          hoverToggle = true
+        });
+      } else {
+        //mouse Hover End
+        JoinComplete.addEventListener("mouseleave", function () {
+          JoinComplete.innerText = "참여 취소";
+          JoinComplete.style.backgroundColor = "#fff";
+          JoinComplete.style.border = "3px solid #8277FF";
+          JoinComplete.style.color = "#585858";
+          hoverToggle = false
+        });
+      }
       toggle = true;
     }
   };
