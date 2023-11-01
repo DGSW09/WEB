@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../../img/logo.png";
 import "../../styles/Login.css";
-
 const DummyUser = {
   UserName: "전민찬",
   UserGrade: 1,
@@ -95,41 +94,40 @@ const Login = () => {
       alert("등록된 회원 정보가 없습니다.\n회원정보를 다시 확인하여 주십시오.");
     }
   };
-
   return (
-    <div className='LoginWrap'>
-      <div className='TopNav'></div>
-      <img src={logo} alt="09's logo" className='logo' />
-      <div className='LoginInputWrap'>
+    <div className="LoginWrap">
+      <div className="TopNav"></div>
+      <img src={logo} alt="09's logo" className="logo" />
+      <div className="LoginInputWrap">
         <input
-          type='text'
-          placeholder='이름을 입력하세요.'
+          type="text"
+          placeholder="이름을 입력하세요."
           onChange={HandleName}
           onKeyPress={HandleInputChange}
           value={Name}
-          className='InputName'
+          className="InputName"
         />
-        <div className='ErrorMessageWrap'>
+        <div className="ErrorMessageWrap">
           {!NameValid && Name.length < 3 && <div>이름을 정확히 입력해주십시오.</div>}
         </div>
         <input
-          type='text'
-          placeholder='학년을 입력하세요'
+          type="text"
+          placeholder="학년을 입력하세요"
           onChange={HandleGrade}
           value={Grade}
-          className='InputGrade'
+          className="InputGrade"
         />
-        <div className='ErrorMessageWrap'>{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
+        <div className="ErrorMessageWrap">{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
         <input
-          type='text'
-          placeholder='학반을 입력하세요'
+          type="text"
+          placeholder="학반을 입력하세요"
           onChange={HandleClass}
           value={Class}
-          className='InputClass'
+          className="InputClass"
         />
-        <div className='ErrorMessageWrap'>{!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}</div>
+        <div className="ErrorMessageWrap">{!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}</div>
         <div>
-          <button type='submit' onClick={ConfirmLogin} disabled={NotAllow} className='start'>
+          <button type="submit" onClick={ConfirmLogin} disabled={NotAllow} className="start">
             시작하기!
           </button>
         </div>

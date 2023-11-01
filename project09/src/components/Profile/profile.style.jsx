@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Product = styled.div`
   width: 12vw;
   height: 28vh;
@@ -59,6 +58,7 @@ export const PageTitle = styled.div`
   font-size: 0.9vw;
   font-family: Pretendard-Variable, sans-serif;
   font-weight: 600;
+  color: #000;
 `;
 
 export const UserInfo = styled.div`

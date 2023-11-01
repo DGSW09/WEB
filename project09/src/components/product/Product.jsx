@@ -1,49 +1,17 @@
 import "../../styles/Product.css";
-import Back from "../../img/back.png";
+import BackPage from "../../img/back.png";
 import ProductImage from "../../img/jetti.svg";
-import { Children } from "react";
+import * as S from "./product.style";
+import { Children, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments } from "@fortawesome/free-regular-svg-icons";
-import { faLessThanEqual, faSleigh } from "@fortawesome/free-solid-svg-icons";
-let toggle;
-let hoverToggle;
+
 const Product = () => {
-  const HandleJoinComplete = () => {
-    const JoinComplete = document.getElementById("Join");
-    if (toggle) {
-      //Click Event
-      JoinComplete.innerText = "참여 하기";
-      JoinComplete.style.backgroundColor = "#8277FF";
-      JoinComplete.style.border = "none";
-      JoinComplete.style.color = "#FFF";
-      toggle = false;
-      hoverToggle = false
-    } else {
-      //Click to Click
-      JoinComplete.innerText = "참여 취소";
-      JoinComplete.style.backgroundColor = "#fff";
-      JoinComplete.style.border = "3px solid #8277FF";
-      JoinComplete.style.color = "#585858";
-      hoverToggle = true
-      //mouse Hover
-      if(!hoverToggle){
-        JoinComplete.addEventListener("mouseover", function () {
-          JoinComplete.style.border = "3px solid #5849FF";
-          JoinComplete.style.color = "#000";
-          hoverToggle = true
-        });
-      } else {
-        //mouse Hover End
-        JoinComplete.addEventListener("mouseleave", function () {
-          JoinComplete.innerText = "참여 취소";
-          JoinComplete.style.backgroundColor = "#fff";
-          JoinComplete.style.border = "3px solid #8277FF";
-          JoinComplete.style.color = "#585858";
-          hoverToggle = false
-        });
-      }
-      toggle = true;
-    }
+  const [isActive, setIsActive] = useState(false);
+  const [clickComment, setClickComment] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
   };
 
   const BackMain = () => {
@@ -61,39 +29,66 @@ const Product = () => {
     }
   };
 
+  const HandlePopUpComment = () => {
+    if (!clickComment) {
+      setClickComment(true);
+    } else {
+      setClickComment(false);
+    }
+  };
+
   return (
-    <div className='ProdcutWrap'>
-      <div className='PageInfo'>
-        <img src={Back} className='back' onClick={BackMain} alt=""/>
-        <div className='PageTitle'>상세페이지</div>
-      </div>
-      <div className='ProductInfo'>
-        <img src={ProductImage} className='productImage' alt=""/>
-        <div className='ProductCommu'>
-          <div className='member'>현재 참여 인원 : 1/10</div>
-          <FontAwesomeIcon icon={faComments} className='comment' />
-        </div>
-        <div className='ProductInfo2'>
-          <div className='ProductTitle'>제티 2박스</div>
-          <div className='ProductContent'>아침에 먹는 우유 같이 제티 타서 먹을 사람....................</div>
-          <div
+    <S.ProductWrap>
+      <S.PageInfo>
+        <S.Back src={BackPage} onClick={BackMain} />
+        <S.PageTitle>상세페이지</S.PageTitle>
+      </S.PageInfo>
+      <S.ProductInfo>
+        <S.ProductImage src={ProductImage} />
+        <S.ProductCommu>
+          <S.Member>현재 참여 인원 : 1/10</S.Member>
+          <S.CommentBtn>
+            <FontAwesomeIcon icon={faComments} onClick={HandlePopUpComment} />
+          </S.CommentBtn>
+        </S.ProductCommu>
+        <S.ProductInfo2>
+          <S.ProductTitle>제티 2박스</S.ProductTitle>
+          <S.ProductContent>아침에 먹는 우유 같이 제티 타서 먹을 사람....................</S.ProductContent>
+          <S.ProductLink
             onClick={() => {
               handleLinkTab(Children);
             }}
-            className='ProductLink'
-            id='Link'
+            id="Link"
           >
             https://wowjety?-many.com/angrybird/
-          </div>
-          <div className='ProductPrice'>₩ 9,920</div>
-          <div className='nProductPrice'>1/N : ₩ 4,960</div>
-          <div className='WriterName'>1303 이윤선</div>
-          <button id='Join' className='join' onClick={HandleJoinComplete}>
-            참여 하기
-          </button>
-        </div>
-      </div>
-    </div>
+          </S.ProductLink>
+          <S.ProductPrice>₩ 9,920</S.ProductPrice>
+          <S.nProductPrice>1/N : ₩ 4,960</S.nProductPrice>
+          <S.WriterName>1303 이윤선</S.WriterName>
+          <S.CommonBtn onClick={handleClick} className={isActive ? "active" : ""}>
+            참여하기
+          </S.CommonBtn>
+        </S.ProductInfo2>
+        {clickComment && (
+          <S.CommentWrap className={clickComment ? "up" : "down"}>
+            <S.CommentTopNav>
+              <S.CommentBack />
+              <S.CommentTitle>댓글 창</S.CommentTitle>
+            </S.CommentTopNav>
+            <S.ShowComment>
+              <S.UplodedComment>
+                <S.CommentProfile />
+                <S.CommentContentWrap>
+                  <S.CommentUploder>1302 김은진</S.CommentUploder>
+                  <S.CommentTime>1 hours ago</S.CommentTime>
+                  <S.CommentContent>제티 몇개씩 나눠가지나요?</S.CommentContent>
+                </S.CommentContentWrap>
+              </S.UplodedComment>
+            </S.ShowComment>
+          </S.CommentWrap>
+        )}
+      </S.ProductInfo>
+    </S.ProductWrap>
   );
 };
 
