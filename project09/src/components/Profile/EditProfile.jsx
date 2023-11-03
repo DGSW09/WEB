@@ -37,8 +37,6 @@ const EditProfile = () => {
     if (file) {
       reader.readAsDataURL(file);
     }
-
-    // console.log(file);
   };
 
   const HandleName = (e) => {
@@ -120,36 +118,55 @@ const EditProfile = () => {
   };
 
   return (
-    <div className='EditProfileWrap'>
-      <div className='TopNav'>
-        <img src={Back} className='back' onClick={BackMain} alt='' />
-        <div className='PageTitle'>내 프로필</div>
+    <div className="EditProfileWrap">
+      <div className="TopNav">
+        <img src={Back} className="back" onClick={BackMain} alt="" />
+        <div className="PageTitle">내 프로필</div>
       </div>
-      <div className='UserPicture'>
-        <img src={selectedImage} className='userImage' alt='' />
-        <input type='file' style={{ display: "none" }} ref={selectFile} onChange={handleImageChange} />
-        <button type='button' className='changeImage' onClick={() => selectFile.current.click()}>
-          사진 변경
-        </button>
-      </div>
-
-      <div className='EditInfo'>
-        <input
-          type='text'
-          placeholder='이름입력'
-          onChange={HandleName}
-          onKeyPress={HandleInputChange}
-          value={Name}
-          className='EditName'
-        />
-        <div className='ErrorMessageWrap'>{!NameValid && <div>이름을 정확히 입력해주십시오.</div>}</div>
-        <input type='text' placeholder='학년입력' onChange={HandleGrade} value={Grade} className='EditGrade' />
-        <div className='ErrorMessageWrap'>{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
-        <input type='text' placeholder='학반입력' onChange={HandleClass} value={Class} className='EditClass' />
-        <div className='ErrorMessageWrap'>{!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}</div>
-        <button type='submit' onClick={onClickConfirmButton} disabled={NotAllow}>
-          저장
-        </button>
+      <div className="Edit">
+        <div className="UserPicture">
+          <img src={selectedImage} className="userImage" alt="" />
+          <input
+            type="file"
+            style={{ display: "none", borderRadius: "10px" }}
+            ref={selectFile}
+            onChange={handleImageChange}
+            className="changedImage"
+          />
+          <button type="button" className="changeImage" onClick={() => selectFile.current.click()}>
+            사진 변경
+          </button>
+        </div>
+        <div className="EditInfo">
+          <input
+            type="text"
+            placeholder="이름을 입력해주세요"
+            onChange={HandleName}
+            onKeyPress={HandleInputChange}
+            value={Name}
+            className="EditName"
+          />
+          <div className="ErrorMessageWrap">{!NameValid && <div>이름을 정확히 입력해주십시오.</div>}</div>
+          <input
+            type="text"
+            placeholder="학년을 입력해주세요"
+            onChange={HandleGrade}
+            value={Grade}
+            className="EditGrade"
+          />
+          <div className="ErrorMessageWrap">{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
+          <input
+            type="text"
+            placeholder="학반을 입력해주세요"
+            onChange={HandleClass}
+            value={Class}
+            className="EditClass"
+          />
+          <div className="ErrorMessageWrap">{!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}</div>
+          <button type="submit" onClick={onClickConfirmButton} disabled={NotAllow}>
+            저장
+          </button>
+        </div>
       </div>
     </div>
   );

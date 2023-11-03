@@ -14,13 +14,14 @@ export const Productcontent = ({ img, title, price, divprice, member }) => {
           <div className="productMember">{member}</div>
         </div>
       </S.Product>
-      <div className="deleteProduct">
-        <div>
-          <FontAwesomeIcon icon={faPenToSquare} color="#ff000000" />
-          <button>삭제</button>
+      {/* {isHover && (
+        <div className="deleteProduct">
+          <div>
+            <FontAwesomeIcon icon={faPenToSquare} color="#ff000000" />
+            <button>삭제</button>
+          </div>
         </div>
-      </div>
+      )} */}
     </>
   );
 };
-export default Productcontent;

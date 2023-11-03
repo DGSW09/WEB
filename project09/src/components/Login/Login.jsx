@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
 import logo from "../../img/logo.png";
+import { useState, useEffect } from "react";
 import "../../styles/Login.css";
+// import * as H from "../Hooks/Login.Hooks";
 const DummyUser = {
   UserName: "전민찬",
   UserGrade: 1,
@@ -94,6 +95,7 @@ const Login = () => {
       alert("등록된 회원 정보가 없습니다.\n회원정보를 다시 확인하여 주십시오.");
     }
   };
+
   return (
     <div className="LoginWrap">
       <div className="TopNav"></div>
@@ -118,6 +120,7 @@ const Login = () => {
           className="InputGrade"
         />
         <div className="ErrorMessageWrap">{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
+        {/*  */}
         <input
           type="text"
           placeholder="학반을 입력하세요"
