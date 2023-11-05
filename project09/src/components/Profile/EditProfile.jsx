@@ -109,8 +109,15 @@ const EditProfile = () => {
   }, [NameValid, GradeValid, ClassValid]);
 
   const onClickConfirmButton = () => {
+    const InputName = document.getElementById("EditName");
+    const InputGrade = document.getElementById("EditGrade");
+    const InputClass = document.getElementById("EditClass");
+
     if (Name === DummyUser.UserName && Grade === DummyUser.UserGrade && Class === DummyUser.UserClass) {
       alert("현재의 프로필과 정보가 같습니다.");
+      InputName.value = null;
+      InputGrade.value = null;
+      InputClass.value = null;
     } else {
       alert("정보가 성공적으로 변경되었습니다.");
       window.location.replace("/profile");
@@ -145,6 +152,7 @@ const EditProfile = () => {
             onKeyPress={HandleInputChange}
             value={Name}
             className="EditName"
+            id="EditName"
           />
           <div className="ErrorMessageWrap">{!NameValid && <div>이름을 정확히 입력해주십시오.</div>}</div>
           <input
@@ -153,6 +161,7 @@ const EditProfile = () => {
             onChange={HandleGrade}
             value={Grade}
             className="EditGrade"
+            id="EditGrade"
           />
           <div className="ErrorMessageWrap">{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
           <input
@@ -161,6 +170,7 @@ const EditProfile = () => {
             onChange={HandleClass}
             value={Class}
             className="EditClass"
+            id="EditClass"
           />
           <div className="ErrorMessageWrap">{!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}</div>
           <button type="submit" onClick={onClickConfirmButton} disabled={NotAllow}>

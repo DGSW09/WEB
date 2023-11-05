@@ -194,12 +194,14 @@ export const CommonBtn = styled.button`
 
 export const CommentWrap = styled.div`
   width: 100%;
-  height: 13vh;
+  height: 180%;
 
-  background: #000;
+  background: #cacaca;
   border-radius: 5px 5px 0px 0px;
 
   position: absolute;
+
+  top: 50%;
 `;
 
 export const CommentTopNav = styled.div`
@@ -208,8 +210,8 @@ export const CommentTopNav = styled.div`
 `;
 
 export const CommentBack = styled.img`
-  width: 15px;
-  height: 15px;
+  width: 1.5%;
+  height: 1.5%;
 
   margin-left: 2vw;
   margin-top: 2vh;
