@@ -1,11 +1,13 @@
-.width {
-  text-align: center;
+.signUpWrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.width > .signup {
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #c1c1c1;
-  text-align: center;
+.signUpWrapper > .logo {
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+.haAclf {
+  margin-left: 20vw;
 }

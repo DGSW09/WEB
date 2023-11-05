@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "gonggu",
+  "display": "standalone",
+  "icon": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "48x48",
+      "type": "imgae/webp"
+    }
+  ],
+  "start_url": "http://localhost:3000"
+}

@@ -1,0 +1,102 @@
+.EditProfileWrap > .TopNav {
+  height: 40vh;
+
+  margin-top: -15vh;
+  margin-left: -8vw;
+
+  color: #fff;
+  position: relative;
+
+  background-image: url("../img/TopNav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -3vw;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.EditProfileWrap > .Edit {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+}
+
+.UserPicture {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 15vh;
+  margin-left: 10vw;
+}
+
+.UserPicture > .userImage {
+  width: 10vw;
+  height: 10vw;
+}
+
+.UserPicture > .changeImage {
+  width: 8vw;
+  height: 2.5vw;
+
+  margin: 3vh auto;
+  border-radius: 5px;
+  border: none;
+
+  font-size: 1rem;
+  font-family: Pretendard-Variable;
+  font-weight: 600;
+}
+
+.EditInfo {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 15vh;
+}
+
+.EditInfo > input {
+  width: 20vw;
+  height: 5vh;
+
+  padding-left: 0.5vw;
+
+  border-radius: 5px;
+  border: 2px solid #c1c1c1;
+  box-shadow: none;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.EditInfo > input::placeholder {
+  padding-left: 0.05vw;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: Prentendard-Variable;
+  color: #c1c1c1;
+}
+
+.EditInfo > button {
+  width: 5vw;
+  height: 4vh;
+
+  align-self: flex-end;
+
+  border: none;
+  border-radius: 10px;
+  background: #8277ff;
+
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard-Variable;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

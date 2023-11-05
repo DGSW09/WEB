@@ -1,98 +1,95 @@
-* {
-  margin-bottom: 20px;
-  outline-color: #000;
-  outline-offset: 1px;
+.LoginWrap {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-left: 43vw;
+  margin-top: 25vh;
 }
 
-/* a {
-  text-decoration: none;
-  color: #fff;
-} */
+.LoginWrap > .TopNav {
+  margin-top: -40vh;
+  margin-left: -45vw;
 
-.width {
-  width: 100%;
-}
+  width: 105vw;
+  height: 35vh;
 
-/* .logo {
-    color: #F88;
-    font: Modak;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    filter: blur(2px);
-  } */
-
-.width > logo {
-  width: 200px;
-  height: 90px;
-  text-align: center;
-  align-items: center;
+  background-image: url("../img/TopNav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
-  margin-top: 110px;
-  text-align: center;
+  width: 13vw;
+  height: 10vh;
+
+  margin-bottom: 6vh;
 }
 
-.InputName {
-  text-align: center;
+.LoginInputWrap {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: -7vw;
 }
 
-.InputName > input {
-  width: 450px;
-  height: 60px;
-  border: 1px solid #c1c1c1;
-  border-radius: 10px;
-  background: #fff;
-  /* color: #C1C1C1; */
-  font-size: 17px;
-  align-items: center;
+.LoginInputWrap input {
+  width: 25vw;
+  height: 6vh;
+
+  padding-left: 1vw;
+  margin-bottom: 1vh;
+
+  border-radius: 5px;
+  border: 2px solid #c1c1c1;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.InputGrade {
-  text-align: center;
+.LoginInputWrap input::placeholder {
+  color: #c1c1c1;
+  font-family: Inter;
+  font-size: 0.7vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.InputGrade > input {
-  width: 450px;
-  height: 60px;
-  border: 1px solid #c1c1c1;
-  border-radius: 10px;
-  background: #fff;
-  /* color: #C1C1C1; */
-  font-size: 17px;
-}
+.ErrorMessageWrap {
+  color: rgb(233, 77, 77);
 
-.InputClass {
-  text-align: center;
-}
+  font-size: 0.6vw;
 
-.InputClass > input {
-  width: 450px;
-  height: 60px;
-  border: 1px solid #c1c1c1;
-  border-radius: 10px;
-  background: #fff;
-  /* color: #C1C1C1; */
-  font-size: 17px;
+  display: block;
+  margin-bottom: 3vh;
 }
 
 .start {
+  width: 15vw;
+  height: 6vh;
+
+  margin-left: 6vw;
+  margin-top: 3vh;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #8277ff;
+
+  color: #fff;
   text-align: center;
+  font-family: Pretendard-Variable;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.start > button {
-  width: 250px;
-  height: 60px;
-  border-radius: 50px;
-  background: #8277ff;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  cursor: pointer;
+.start:disabled {
+  background-color: rgb(198, 190, 190);
 }

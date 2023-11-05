@@ -1,0 +1,204 @@
+.ProfileWrap {
+  margin: 0;
+  padding: 0;
+}
+
+.ProfileWrap > .TopNav {
+  height: 40vh;
+
+  margin-top: -15vh;
+  margin-left: -8vw;
+
+  color: #fff;
+  position: relative;
+
+  background-image: url("../img/TopNav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.back {
+  margin-top: 16vh;
+  margin-left: 8.6vw;
+
+  width: 2vh;
+  height: 2vh;
+}
+
+.PageTitle {
+  margin-top: 16.2vh;
+  margin-left: 1.6vw;
+
+  font-size: 0.9vw;
+  font-family: Pretendard-Variable, sans-serif;
+  font-weight: 600;
+}
+
+.UserInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.UserInfo > .userImage {
+  width: 7vw;
+  height: 7vw;
+
+  margin-left: 15vw;
+}
+
+.UserInfo > .schoolInfo {
+  margin-left: 9vw;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: Pretendard, sans-serif;
+}
+
+.schoolInfo > .UserName {
+  margin-top: 0.5vh;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.schoolInfo > .UserGradeAndClass {
+  font-size: 0.7vw;
+  font-weight: 400;
+  font-family: Pretendard-Variable, sans-serif;
+
+  margin-top: 3vh;
+}
+
+.schoolInfo > .EditProfile {
+  margin-top: 5vh;
+
+  width: 4vw;
+  height: 2vh;
+
+  border: none;
+  border-radius: 0.2vw;
+
+  font-size: 0.5vw;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.UploadProductTitle {
+  color: #8277ff;
+  font-family: Pretendard-Variable, sans-serif;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.9px;
+
+  margin-left: 12vw;
+  margin-top: 10vh;
+}
+
+.UploadProduct {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 12vw;
+  margin-top: 5vh;
+}
+
+.UploadProduct > .pd {
+  width: 12vw;
+  height: 28vh;
+
+  margin-right: 10vw;
+
+  /* border: 1px solid #000; */
+  border-radius: 5px;
+
+  font-family: Pretendard-Variable, sans-serif;
+
+  /* position: absolute; */
+  /* z-index: -1; */
+}
+
+.UploadProduct > .pd > .productImage {
+  width: 12vw;
+  height: 20vh;
+
+  margin-top: -1vh;
+
+  filter: drop-shadow(0px 2px 0px #000);
+}
+
+.UploadProduct > .pd > .productTitle {
+  font-family: Pretendard-Variable, sans-serif;
+  font-size: 0.7vw;
+  font-weight: 400;
+
+  margin-top: 0.6vh;
+  margin-left: 0.4vw;
+}
+
+.UploadProduct > .pd > .productPrice {
+  font-family: Pretendard-Variable, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+
+  margin-top: 1vh;
+  margin-left: 0.4vw;
+}
+
+.One_In_N {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.UploadProduct > .pd > .One_In_N > .productN {
+  font-family: Pretendard-Variable, sans-serif;
+  font-size: 0.5vw;
+  font-weight: 400;
+
+  margin-top: 0.7vh;
+  margin-left: -5.5vw;
+
+  color: #5849ff;
+}
+
+.UploadProduct > .pd > .One_In_N > .productMember {
+  margin-top: 0.7vh;
+  margin-right: -5vw;
+  margin-left: 1vw;
+}
+
+.testbox {
+  width: 12vw;
+  height: 28vh;
+
+  position: absolute;
+}
+
+.deleteProduct {
+  visibility: hidden;
+  width: 12vw;
+  height: 28vh;
+
+  /* z-index: 1; */
+
+  /* position: static; */
+}
+
+.deleteProduct > button {
+  border: none;
+  color: red;
+}
+
+.pd:hover + .deleteProduct {
+  visibility: visible;
+
+  background-color: gray;
+  position: relative;
+}
