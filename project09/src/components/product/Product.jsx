@@ -5,7 +5,6 @@ import * as S from "./product.style";
 import { Children, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments, faHourglassEmpty } from "@fortawesome/free-regular-svg-icons";
-import { toHaveClass } from "@testing-library/jest-dom/matchers";
 
 const Product = () => {
   const [isActive, setIsActive] = useState(false);

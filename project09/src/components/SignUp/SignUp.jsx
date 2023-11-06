@@ -2,9 +2,11 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import { GoogleLogin } from "@react-oauth/google";
 import logo from "../../img/logo.png";
 import "../../styles/SignUp.css";
+import client_id from "../ClientID";
 import axios from "axios";
+import * as S from "./style";
 const SignUp = () => {
-  const cliendId = "46330787138-22m388pdr4ssrehscaaksg1nbfr3qn03.apps.googleusercontent.com";
+  const cliendId = client_id;
   const SERVERURL = "http://172.20.10.13:8080/auth/login/google";
 
   const onSuccess = async (response) => {

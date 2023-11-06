@@ -1,0 +1,37 @@
+.UploadProductWrap {
+  margin: 0;
+  padding: 0;
+}
+
+.UploadProductWrap > .PageInfo {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.UploadProductWrap > .PageInfo > .back {
+  width: 2vw;
+  height: 2vw;
+
+  margin: 2vh 3vw;
+}
+
+.UploadProductWrap > .PageInfo > .PageTitle {
+  margin-right: 85vw;
+  margin-left: 0vw;
+  margin-top: 2.3vh;
+
+  color: #585858;
+  font-family: Pretendard-Variable, "굴림";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+
+.UploadProductWrap > .UploadProductInfo {
+  display: flex;
+  flex-direction: column;
+}

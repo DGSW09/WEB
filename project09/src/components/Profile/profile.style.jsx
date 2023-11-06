@@ -34,7 +34,7 @@ export const TopNav = styled.div`
   color: #fff;
   position: relative;
 
-  background-image: url("../img/TopNav.png");
+  background-image: url("../../img/TopNav.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -101,3 +101,22 @@
   font-weight: 700;
   line-height: normal;
 }
+
+.EditInfo > button:disabled {
+  width: 5vw;
+  height: 4vh;
+
+  align-self: flex-end;
+
+  border: none;
+  border-radius: 10px;
+  background: #c1c1c1;
+
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard-Variable;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

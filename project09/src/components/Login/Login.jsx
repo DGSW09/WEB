@@ -88,10 +88,16 @@ const Login = () => {
   }, [NameValid, GradeValid, ClassValid]);
 
   const ConfirmLogin = () => {
+    const NameInfo = document.getElementById("name");
+    const GradeInfo = document.getElementById("grade");
+    const ClassInfo = document.getElementById("class");
     if (Name === DummyUser.UserName && Grade === DummyUser.UserGrade && Class === DummyUser.UserClass) {
       alert("로그인 성공");
       window.location.replace("/");
     } else {
+      NameInfo.value = null;
+      GradeInfo.value = null;
+      ClassInfo.value = null;
       alert("등록된 회원 정보가 없습니다.\n회원정보를 다시 확인하여 주십시오.");
     }
   };
@@ -99,7 +105,7 @@ const Login = () => {
   return (
     <div className="LoginWrap">
       <div className="TopNav"></div>
-      <img src={logo} alt="09's logo" className="logo" />
+      <h1 className="title">GONGGU</h1>
       <div className="LoginInputWrap">
         <input
           type="text"
@@ -108,6 +114,7 @@ const Login = () => {
           onKeyPress={HandleInputChange}
           value={Name}
           className="InputName"
+          id="name"
         />
         <div className="ErrorMessageWrap">
           {!NameValid && Name.length < 3 && <div>이름을 정확히 입력해주십시오.</div>}
@@ -118,6 +125,7 @@ const Login = () => {
           onChange={HandleGrade}
           value={Grade}
           className="InputGrade"
+          id="grade"
         />
         <div className="ErrorMessageWrap">{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
         {/*  */}
@@ -127,6 +135,7 @@ const Login = () => {
           onChange={HandleClass}
           value={Class}
           className="InputClass"
+          id="class"
         />
         <div className="ErrorMessageWrap">{!ClassValid && <div>반 정보를 정확히 입력해주십시오.</div>}</div>
         <div>

@@ -9,6 +9,8 @@ import EditProfile from "./components/Profile/EditProfile";
 import UploadProduct from "./components/Product/UploadProduct";
 import EditProduct from "./components/Product/EditProduct";
 import SignUp from "./components/SignUp/SignUp";
+import MoreInfoSignUp from "./components/SignUp/MoreInfoSignUp";
+
 // import axios from "axios";
 
 function App() {
@@ -24,15 +26,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/product' element={<Product />} />
-        <Route path='/product/writer' element={<WriterProduct />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/profile' element={<Profile />} />
-        <Route path='/profile/edit' element={<EditProfile />} />
-        <Route path='/product/upload' element={<UploadProduct />} />
-        <Route path='product/edit' element={<EditProduct />} />
-        <Route path='/signUp' element={<SignUp />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="signUp/moreInfo" element={<MoreInfoSignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/product/writer" element={<WriterProduct />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/edit" element={<EditProfile />} />
+        <Route path="/product/upload" element={<UploadProduct />} />
+        <Route path="product/edit" element={<EditProduct />} />
       </Routes>
     </BrowserRouter>
   );

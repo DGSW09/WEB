@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Fascinate+Inline&display=swap");
+
 .LoginWrap {
   display: flex;
 
@@ -10,6 +12,7 @@
 .LoginWrap > .TopNav {
   margin-top: -40vh;
   margin-left: -45vw;
+  /* margin-right: 145vw; */
 
   width: 105vw;
   height: 35vh;
@@ -19,11 +22,13 @@
   background-size: cover;
 }
 
-.logo {
+.title {
   width: 13vw;
   height: 10vh;
 
-  margin-bottom: 6vh;
+  /* margin-left: 1vw; */
+
+  font-family: "Fascinate Inline";
 }
 
 .LoginInputWrap {
