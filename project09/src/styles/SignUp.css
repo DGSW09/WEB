@@ -8,18 +8,22 @@
   margin-top: 20vh;
 }
 
-.haAclf {
+.abcRioButton > .abcRioButtonLightBlue {
+  margin: 0 auto;
+}
+
+/* .haAclf {
   margin-left: 20vw;
-}
+} */
 
-.GOOGLE {
+/* .GOOGLE {
   border: 3px solid red;
-}
+} */
 
-.nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb {
+/* .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb {
   width: 100vw;
   border: 10px solid blue;
-}
+} */
 
 /* .GOOGLE:first-child {
   width: 100%;

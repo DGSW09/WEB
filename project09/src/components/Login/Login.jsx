@@ -1,7 +1,8 @@
-import logo from "../../img/logo.png";
+import axios from "axios";
 import { useState, useEffect } from "react";
 import "../../styles/Login.css";
-// import * as H from "../Hooks/Login.Hooks";
+import SERVERURL from "../GitHide/ServerAdress";
+import { useNavigate } from "react-router";
 const DummyUser = {
   UserName: "전민찬",
   UserGrade: 1,
@@ -9,6 +10,7 @@ const DummyUser = {
 };
 
 const Login = () => {
+  const navigate = useNavigate();
   const [Name, setName] = useState("");
   const [Grade, setGrade] = useState("");
   const [Class, setClass] = useState("");
@@ -87,18 +89,37 @@ const Login = () => {
     setNotAllow(true);
   }, [NameValid, GradeValid, ClassValid]);
 
-  const ConfirmLogin = () => {
+  const ConfirmLogin = async (e) => {
     const NameInfo = document.getElementById("name");
     const GradeInfo = document.getElementById("grade");
     const ClassInfo = document.getElementById("class");
     if (Name === DummyUser.UserName && Grade === DummyUser.UserGrade && Class === DummyUser.UserClass) {
-      alert("로그인 성공");
-      window.location.replace("/");
+      // console.log("로그인 성공");
+      // alert("로그인 성공");
+      // navigate("/");
+      try {
+        const response = await axios.post(SERVERURL + "/login", {
+          settingData: {
+            name: `${Name}`,
+            grade: `${Grade}`,
+            class: `${Class}`,
+          },
+          images: `${Image}`,
+        });
+        console.log("로그인 성공");
+      } catch (error) {
+        console.error("로그인 실패", error);
+        alert("등록된 회원 정보가 없습니다. \n다시 입력해주세요.");
+
+        NameInfo.value = null;
+        GradeInfo.value = null;
+        ClassInfo.value = null;
+      }
     } else {
       NameInfo.value = null;
       GradeInfo.value = null;
       ClassInfo.value = null;
-      alert("등록된 회원 정보가 없습니다.\n회원정보를 다시 확인하여 주십시오.");
+      alert("등록된 회원 정보가 없습니다. \n다시 입력해주세요.");
     }
   };
 
@@ -128,7 +149,6 @@ const Login = () => {
           id="grade"
         />
         <div className="ErrorMessageWrap">{!GradeValid && <div>학년 정보를 정확히 입력해주십시오.</div>}</div>
-        {/*  */}
         <input
           type="text"
           placeholder="학반을 입력하세요"

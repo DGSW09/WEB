@@ -1,16 +1,17 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Product from "./components/Product/Product";
-import Main from "./components/Main/Main";
-import WriterProduct from "./components/Product/WriterProduct";
-import Login from "./components/Login/Login";
-import Profile from "./components/Profile/profile";
-import EditProfile from "./components/Profile/EditProfile";
-import UploadProduct from "./components/Product/UploadProduct";
-import EditProduct from "./components/Product/EditProduct";
 import SignUp from "./components/SignUp/SignUp";
 import MoreInfoSignUp from "./components/SignUp/MoreInfoSignUp";
-
+import Login from "./components/Login/Login";
+import Main from "./components/Main/Main";
+import Search from "./components/Search/Search";
+import Product from "./components/Product/Product";
+import WriterProduct from "./components/WriterProduct/WriterProduct";
+import UploadProduct from "./components/UploadProduct/UploadProduct";
+// import Profile from "./components/Profile/profile";
+import EditProfile from "./components/EditProfile/EditProfile";
+import EditProduct from "./components/EditProduct/EditProduct";
+import ProductData from "./components/Profile/ProductData";
 // import axios from "axios";
 
 function App() {
@@ -30,9 +31,10 @@ function App() {
         <Route path="signUp/moreInfo" element={<MoreInfoSignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Main />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/product" element={<Product />} />
         <Route path="/product/writer" element={<WriterProduct />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<ProductData />} />
         <Route path="/profile/edit" element={<EditProfile />} />
         <Route path="/product/upload" element={<UploadProduct />} />
         <Route path="product/edit" element={<EditProduct />} />

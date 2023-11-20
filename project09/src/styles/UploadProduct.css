@@ -1,37 +1,35 @@
-.UploadProductWrap {
-  margin: 0;
-  padding: 0;
-}
-
 .UploadProductWrap > .PageInfo {
   display: flex;
   flex-direction: row;
 
   width: 100%;
+  height: 1%;
 }
 
-.UploadProductWrap > .PageInfo > .back {
-  width: 2vw;
-  height: 2vw;
+.UploadProductWrap > .PageInfo > .Back {
+  width: 1.875%;
+  height: 1.875%;
 
-  margin: 2vh 3vw;
+  margin-left: 2%;
+  margin-top: 1%;
 }
 
-.UploadProductWrap > .PageInfo > .PageTitle {
-  margin-right: 85vw;
-  margin-left: 0vw;
-  margin-top: 2.3vh;
+.UploadProductWrap > .PageInfo > .title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Prentendard-Variable, sans-serif;
 
-  color: #585858;
-  font-family: Pretendard-Variable, "굴림";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.75px;
+  margin-top: 1.3%;
+  margin-left: 2%;
 }
 
-.UploadProductWrap > .UploadProductInfo {
+.UploadProductWrap > .InputWrap {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.UploadProductWrap > .InputWrap > input:not("InputImage") {
+  width: 40%;
+  height: 10%;
 }

@@ -2,12 +2,15 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import { GoogleLogin } from "@react-oauth/google";
 import logo from "../../img/logo.png";
 import "../../styles/SignUp.css";
-import client_id from "../ClientID";
+import client_id from "../GitHide/ClientID";
+import { useNavigate } from "react-router";
+// import SERVERURL from "../GitHide/ServerAdress";
+// import server_url from "../GitHide/ServerAdress";
 import axios from "axios";
-import * as S from "./style";
 const SignUp = () => {
+  const SERVERURL = "https://port-0-gonggu-server-1drvf2llokz2ag4.sel5.cloudtype.app/auth/login/google";
+  const navigate = useNavigate();
   const cliendId = client_id;
-  const SERVERURL = "http://172.20.10.13:8080/auth/login/google";
 
   const onSuccess = async (response) => {
     console.log(response);
@@ -24,6 +27,7 @@ const SignUp = () => {
       );
 
       console.log("Post Complete");
+      navigate("/login");
     } catch (error) {
       console.log("Post Failed", error);
     }

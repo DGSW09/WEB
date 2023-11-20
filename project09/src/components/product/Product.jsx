@@ -30,6 +30,16 @@ const Product = () => {
     }
   };
 
+  const handleAccountTab = async (e) => {
+    let account = document.getElementById("Account").innerText;
+    try {
+      await navigator.clipboard.writeText(account);
+      alert("클립보드에 링크가 복사되었습니다.");
+      e.preventDefault();
+      window.open(account);
+    } catch {}
+  };
+
   const HandlePopUpComment = () => {
     if (!clickComment) {
       setClickComment(true);
@@ -67,6 +77,14 @@ const Product = () => {
           </S.ProductLink>
           <S.ProductPrice>₩ 9,920</S.ProductPrice>
           <S.nProductPrice>1/N : ₩ 4,960</S.nProductPrice>
+          <S.Account
+            onClick={() => {
+              handleAccountTab(Children);
+            }}
+            id="Account"
+          >
+            7777023773096 카카오뱅크
+          </S.Account>
           <S.WriterName>1303 이윤선</S.WriterName>
           <S.CommonBtn onClick={handleClick} className={isActive ? "active" : ""}>
             참여하기

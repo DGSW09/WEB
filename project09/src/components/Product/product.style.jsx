@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const ProductWrap = styled.div`
   margin: 0;
@@ -145,6 +145,18 @@ export const nProductPrice = styled.div`
   margin-top: 3vh;
 `;
 
+export const Account = styled.div`
+  margin-left: 20vw;
+  margin-top: 3%;
+
+  color: #888;
+  font-family: Pretendard-Variable;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+`;
+
 export const WriterName = styled.div`
   margin-left: 20vw;
   margin-top: 10vh;
@@ -253,6 +265,10 @@ export const CommentContentWrap = styled.div`
   height: 4vh;
 
   flex-wrap: wrap;
+
+  margin: 0;
+
+  overflow-x: hidden;
 `;
 
 export const CommentUploder = styled.p`

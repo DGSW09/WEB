@@ -1,16 +1,11 @@
 import "../../styles/profile.css";
 import Back from "../../img/back.png";
 import profile from "../../img/profile.png";
-import productImage from "../../img/jetti.svg";
+// import productImage from "../../img/jetti.svg";
 import * as S from "./profile.style";
-import { Productcontent } from "./productContent";
+// import { Productcontent } from "./productContent";
 
-const Profile = () => {
-  const data = [
-    { img: `${productImage}`, title: "제티 2박스", pirce: "₩ 9,920", divprice: "1/N : ₩4,960", member: "1/2" },
-    { img: `${productImage}`, title: "제티 2박스", pirce: "₩ 9,920", divprice: "1/N : ₩4,960", member: "1/2" },
-  ];
-
+const Profile = (data) => {
   const BackMain = () => {
     window.location.replace("/");
   };
@@ -39,9 +34,13 @@ const Profile = () => {
       </S.UserInfo>
       <S.UploadProductTitle>게시한 상품</S.UploadProductTitle>
       <S.UploadProduct onClick={LoadToProduct}>
-        {data.map((el) => {
-          <Productcontent img={el.img} title={el.title} price={el.pirce} divprice={el.divprice} member={el.member} />;
-        })}
+        {/* {data.map((key) => (
+          <div>
+            <div>{key.title}</div>
+            <div>{key.price}</div>
+            <div></div>
+          </div>
+        ))} */}
       </S.UploadProduct>
     </S.ProfileWrap>
   );

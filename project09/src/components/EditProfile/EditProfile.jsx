@@ -2,16 +2,19 @@ import UserProfile from "../../img/profile.png";
 import Back from "../../img/back.png";
 import "../../styles/EditProfile.css";
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router";
 
 const DummyUser = {
-  UserName: "전민찬",
+  UserName: "이윤선",
   UserGrade: 1,
   UserClass: 3,
 };
 
 const EditProfile = () => {
+  const navigate = useNavigate();
+
   const BackMain = () => {
-    window.location.replace("/");
+    navigate("/");
   };
 
   const [Name, setName] = useState("");
@@ -120,7 +123,7 @@ const EditProfile = () => {
       InputClass.value = null;
     } else {
       alert("정보가 성공적으로 변경되었습니다.");
-      window.location.replace("/profile");
+      navigate("/profile");
     }
   };
 
