@@ -36,7 +36,6 @@ const SignUp = () => {
             onSuccess={onSuccess}
             onError={() => {
               console.log("실패");
-              aslkdnt;
             }}
           />
         </GoogleOAuthProvider>
