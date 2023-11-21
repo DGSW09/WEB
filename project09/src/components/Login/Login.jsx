@@ -89,6 +89,25 @@ const Login = () => {
     setNotAllow(true);
   }, [NameValid, GradeValid, ClassValid]);
 
+  const [Image, setImage] = useState(null);
+
+  const handleImageChange = (e) => {
+    const selectedImage = e.target.files[0];
+    setImage(selectedImage);
+  };
+
+  const UploadImage = async () => {
+    try {
+      const formData = new FormData();
+      formData.append("profileImage", Image);
+
+      const response = await axios.post(SERVERURL + "/upload", formData);
+      console.log("이미지 업로드 성공", response.data);
+    } catch (error) {
+      console.error("다시 올려 시발아", error);
+    }
+  };
+
   const ConfirmLogin = async (e) => {
     const NameInfo = document.getElementById("name");
     const GradeInfo = document.getElementById("grade");
@@ -121,6 +140,10 @@ const Login = () => {
       ClassInfo.value = null;
       alert("등록된 회원 정보가 없습니다. \n다시 입력해주세요.");
     }
+
+    // try {
+
+    // }
   };
 
   return (

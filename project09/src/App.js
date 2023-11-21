@@ -12,6 +12,7 @@ import UploadProduct from "./components/UploadProduct/UploadProduct";
 import EditProfile from "./components/EditProfile/EditProfile";
 import EditProduct from "./components/EditProduct/EditProduct";
 import ProductData from "./components/Profile/ProductData";
+import JoinPeoplePage from "./components/JoinPeoplePage/JoinPeoplePage";
 // import axios from "axios";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/profile/edit" element={<EditProfile />} />
         <Route path="/product/upload" element={<UploadProduct />} />
         <Route path="product/edit" element={<EditProduct />} />
+        <Route path="/product/join" element={<JoinPeoplePage />} />
       </Routes>
     </BrowserRouter>
   );
