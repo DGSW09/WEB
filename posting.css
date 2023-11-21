@@ -1,0 +1,88 @@
+.App {
+  position:relative;
+  display:flex;
+}
+.App2 {
+  position:relative;
+  display:flex;
+  margin-left:70px;
+}
+.back-button {
+  width:30px;
+  height:30px;
+  margin-left:40px;
+  position:relative;
+  margin-top:25px;
+}
+.msg {
+  position:absolute;
+  margin-left:100px;
+  font-size:25px;
+  font-weight:bold;
+  color:#585858;
+}
+.jetti {
+  margin-top:20px;
+  width:190px;
+  height:190px;
+  /* align-items:center; */
+  margin-left:15px;
+  /* position:relative; */
+  border-bottom:solid #cccccc;
+  /* display:flex; */
+}
+.post {
+  margin-top:110px;
+  margin-left:160px;
+  height:320px;
+  width:220px;
+  border-radius:3%;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+.post2 {
+  margin-top:120px;
+  margin-left:160px;
+  height:320px;
+  width:220px;
+  border-radius:3%;
+  justify-content:center;
+  align-items:center;
+}
+.ttwojetti {
+  padding-bottom:30px;
+  position:absolute;
+}
+.twojetti {
+  margin-left:20px;
+  margin-bottom:5px;
+  margin-top:5px;
+  font-size:17px;
+}
+.price {
+  margin-left:20px;
+  font-size:25px;
+  font-weight:Bold;
+  margin-top:8px;
+  margin-bottom:5px;
+}
+.devided-price {
+  font-size:14px;
+  color:#5849FF;
+  margin-left:20px;
+  position:relative;
+}
+.devide {
+  position:absolute;
+  font-size:15px;
+  margin-left:180px;
+}
+.post:hover {
+  background-color:rgb(66, 66, 66, 0.7);
+  opacity:0.85;
+}
+.post2:hover {
+  background-color:rgb(66, 66, 66, 0.7);
+  opacity:0.85;
+}
