@@ -33,7 +33,7 @@ function App() {
         <Route path='/product/upload' element={<UploadProduct />} />
         <Route path='product/edit' element={<EditProduct />} />
         <Route path='/signUp' element={<SignUp />} />
-        <JoinPeople />
+        <Route path='/joinPeople' element={<JoinPeople />} />
       </Routes>
     </BrowserRouter>
   );
