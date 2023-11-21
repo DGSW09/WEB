@@ -4,7 +4,8 @@ import logo from "../../img/logo.png";
 import "../../styles/SignUp.css";
 import axios from "axios";
 const SignUp = () => {
-  const cliendId = "46330787138-22m388pdr4ssrehscaaksg1nbfr3qn03.apps.googleusercontent.com";
+  const cliendId =
+    "46330787138-22m388pdr4ssrehscaaksg1nbfr3qn03.apps.googleusercontent.com";
   const SERVERURL = "http://172.20.10.13:8080/auth/login/google";
 
   const onSuccess = async (response) => {
@@ -18,7 +19,7 @@ const SignUp = () => {
         },
         {
           headers: null,
-        },
+        }
       );
 
       console.log("Post Complete");
@@ -35,6 +36,7 @@ const SignUp = () => {
             onSuccess={onSuccess}
             onError={() => {
               console.log("실패");
+              aslkdnt;
             }}
           />
         </GoogleOAuthProvider>
