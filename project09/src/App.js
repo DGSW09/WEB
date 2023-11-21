@@ -9,6 +9,7 @@ import EditProfile from "./components/Profile/EditProfile";
 import UploadProduct from "./components/Product/UploadProduct";
 import EditProduct from "./components/Product/EditProduct";
 import SignUp from "./components/SignUp/SignUp";
+import JoinPeople from "./components/Join/JoinPeople";
 // import axios from "axios";
 
 function App() {
