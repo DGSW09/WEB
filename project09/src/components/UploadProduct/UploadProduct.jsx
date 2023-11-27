@@ -1,10 +1,21 @@
 import "../../styles/UploadProduct.css";
+import { useState } from "react";
 import Back from "../../img/back.png";
 import { useRef } from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";
 import SERVERURL from "../GitHide/ServerAdress";
+import cliendId from "../GitHide/ClientID";
+import * as S from "./UploadProduct.style";
 const UploadProduct = () => {
+  const [image, setImage] = useState();
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [link, setLink] = useState("");
+  const [price, setPrice] = useState("");
+  const [member, setMember] = useState("");
+  const [account, setAccount] = useState("");
+
   const FileSelect = useRef("");
 
   const navigate = useNavigate();
@@ -14,56 +25,74 @@ const UploadProduct = () => {
   };
 
   const Upload = async () => {
-    const Title = document.getElementById("title");
-    const Link = document.getElementById("link");
-    const Price = document.getElementById("price");
-    const Member = document.getElementById("member");
-    const Content = document.getElementById("content");
-    const Account = document.getElementById("account");
+    const formData = new FormData();
 
+    console.log(image);
+
+    formData.append("images", image[1]);
+    formData.append(
+      "data",
+      new Blob(
+        [
+          JSON.stringify({
+            title: title,
+            content: content,
+            link: link,
+            price: price,
+            nPrice: `${price / member}`,
+            maxPeople: member,
+            image: image[1],
+          }),
+        ],
+        {
+          type: "application/json",
+        },
+      ),
+    );
     try {
-      await axios.post(
-        SERVERURL,
-        {
-          title: `${Title.innerText}`,
-          link: `${Link.innerText}`,
-          price: `${Price.innerText}`,
-          member: `${Member.innerText}`,
-          content: `${Content.innerText}`,
-          account: `${Account.innerText}`,
-        },
-        {
-          headers: null,
-        },
-      );
+      await axios.post(SERVERURL + "/gonggu/goods/add", formData, {});
+      alert("서버 전송 성공");
     } catch (error) {
-      console.log("Post Failed", error);
+      console.error("안됨");
     }
-    alert("작성되었습니다.");
+  };
+
+  const onChangeImgaeInput = (e) => {
+    setImage([image, e.target.files[0]]);
   };
 
   return (
-    <div className="UploadProductWrap">
-      <div className="PageInfo">
-        <img src={Back} className="Back" onClick={BackMain} />
-        <div className="title">게시물 올리기</div>
-      </div>
-      <div className="InputWrap">
-        <input type="file" style={{ display: "none" }} ref={FileSelect} className="InputImage" />
-        <button className="SelectImgae" onClick={() => FileSelect.current.click()}>
+    <S.UploadProdcutWrap>
+      <S.PageInfo>
+        <S.Back src={Back} />
+        <S.Title>게시물 올리기</S.Title>
+      </S.PageInfo>
+      <S.InputWrap>
+        <input
+          type="file"
+          style={{ display: "none" }}
+          ref={FileSelect}
+          className="InputImage"
+          onChange={onChangeImgaeInput}
+        />
+        <button
+          className="SelectImgae"
+          onClick={() => FileSelect.current.click()}
+          style={{ width: "40%", height: "150px" }}
+        >
           사진 첨부하기
         </button>
-        <input type="text" className="InputTitle" placeholder="제목을 입력하세요" id="title" />
-        <input type="text" className="InputLink" placeholder="링크를 입력하세요" id="link" />
-        <input type="text" className="InputPrice" placeholder="가격을 입력하세요" id="price" />
-        <input type="text" className="InputMember" placeholder="참여 인원을 입력하세요" id="member" />
-        <input type="text" className="InputContent" placeholder="내용을 입력하세요" id="content" />
-        <input type="text" className="InputAccount" placeholder="계좌번호를 입력하세요" id="account" />
-        <button className="UploadCompelte" type="submit" onClick={Upload}>
+        <S.Input type="text" placeholder="제목을 입력하세요" onChange={(e) => setTitle(e.target.value)} />
+        <S.Input type="text" placeholder="링크를 입력하세요" onChange={(e) => setLink(e.target.value)} />
+        <S.Input type="text" placeholder="가격을 입력하세요" onChange={(e) => setPrice(e.target.value)} />
+        <S.Input type="text" placeholder="참여 인원을 입력하세요" onChange={(e) => setMember(e.target.value)} />
+        <S.Input type="text" placeholder="내용을 입력하세요" onChange={(e) => setContent(e.target.value)} />
+        <S.Input type="text" placeholder="계좌번호를 입력하세요" onChange={(e) => setAccount(e.target.value)} />
+        <S.UploadComplete type="submit" onClick={Upload}>
           게시물 작성
-        </button>
-      </div>
-    </div>
+        </S.UploadComplete>
+      </S.InputWrap>
+    </S.UploadProdcutWrap>
   );
 };
 

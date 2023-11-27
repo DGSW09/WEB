@@ -104,7 +104,7 @@ const Login = () => {
       const response = await axios.post(SERVERURL + "/upload", formData);
       console.log("이미지 업로드 성공", response.data);
     } catch (error) {
-      console.error("다시 올려 시발아", error);
+      console.error("실패 ", error);
     }
   };
 
@@ -117,15 +117,16 @@ const Login = () => {
       // alert("로그인 성공");
       // navigate("/");
       try {
+        await UploadImage();
+
         const response = await axios.post(SERVERURL + "/login", {
           settingData: {
             name: `${Name}`,
             grade: `${Grade}`,
             class: `${Class}`,
           },
-          images: `${Image}`,
         });
-        console.log("로그인 성공");
+        console.log("로그인 성공", response.data);
       } catch (error) {
         console.error("로그인 실패", error);
         alert("등록된 회원 정보가 없습니다. \n다시 입력해주세요.");
@@ -140,10 +141,6 @@ const Login = () => {
       ClassInfo.value = null;
       alert("등록된 회원 정보가 없습니다. \n다시 입력해주세요.");
     }
-
-    // try {
-
-    // }
   };
 
   return (
