@@ -1,5 +1,5 @@
-import "../../styles/EditProduct.css";
-import Back from "../../img/back.png";
+import "../../../styles/EditProduct.css";
+import Back from "../../../img/back.png";
 import { useRef } from "react";
 
 const EditProduct = () => {

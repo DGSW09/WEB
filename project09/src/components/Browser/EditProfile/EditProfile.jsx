@@ -1,6 +1,6 @@
-import UserProfile from "../../img/profile.png";
-import Back from "../../img/back.png";
-import "../../styles/EditProfile.css";
+import UserProfile from "../../../img/profile.png";
+import Back from "../../../img/back.png";
+import "../../../styles/EditProfile.css";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 

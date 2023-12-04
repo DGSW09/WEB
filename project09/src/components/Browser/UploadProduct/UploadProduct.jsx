@@ -1,6 +1,6 @@
-import "../../styles/UploadProduct.css";
+import "../../../styles/UploadProduct.css";
 import { useState } from "react";
-import Back from "../../img/back.png";
+import Back from "../../../img/back.png";
 import { useRef } from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";
@@ -15,6 +15,7 @@ const UploadProduct = () => {
   const [price, setPrice] = useState("");
   const [member, setMember] = useState("");
   const [account, setAccount] = useState("");
+  const [date, setDate] = useState("");
 
   const FileSelect = useRef("");
 
@@ -26,10 +27,8 @@ const UploadProduct = () => {
 
   const Upload = async () => {
     const formData = new FormData();
-
     console.log(image);
-
-    formData.append("images", image[1]);
+    formData.append("image", image[1]);
     formData.append(
       "data",
       new Blob(
@@ -39,9 +38,9 @@ const UploadProduct = () => {
             content: content,
             link: link,
             price: price,
-            nPrice: `${price / member}`,
             maxPeople: member,
-            image: image[1],
+            account: account,
+            finishTime: date,
           }),
         ],
         {
@@ -50,11 +49,19 @@ const UploadProduct = () => {
       ),
     );
     try {
-      await axios.post(SERVERURL + "/gonggu/goods/add", formData, {});
-      alert("서버 전송 성공");
+      await axios.post(SERVERURL + "gonggu/goods/add", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          charset: "utf-8",
+          Authorization: "Bearer " + localStorage.getItem("accessToken"),
+        },
+      });
+      alert("asldnt");
     } catch (error) {
-      console.error("안됨");
+      alert(error || "error");
     }
+    alert("정상적으로 등록되었습니다.");
+    navigate("/");
   };
 
   const onChangeImgaeInput = (e) => {
@@ -88,6 +95,7 @@ const UploadProduct = () => {
         <S.Input type="text" placeholder="참여 인원을 입력하세요" onChange={(e) => setMember(e.target.value)} />
         <S.Input type="text" placeholder="내용을 입력하세요" onChange={(e) => setContent(e.target.value)} />
         <S.Input type="text" placeholder="계좌번호를 입력하세요" onChange={(e) => setAccount(e.target.value)} />
+        <S.Input type="date" placeholder="만료일자를 입력하세요" onChange={(e) => setDate(e.target.value)} />
         <S.UploadComplete type="submit" onClick={Upload}>
           게시물 작성
         </S.UploadComplete>

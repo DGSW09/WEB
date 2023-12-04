@@ -1,12 +1,14 @@
-import "../../styles/Product.css";
-import BackPage from "../../img/back.png";
-import ProductImage from "../../img/jetti.svg";
+import "../../../styles/Product.css";
+import BackPage from "../../../img/back.png";
+import ProductImage from "../../../img/jetti.svg";
 import * as S from "./product.style";
 import { Children, useState } from "react";
+import { useNavigate } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments, faHourglassEmpty } from "@fortawesome/free-regular-svg-icons";
 
 const Product = () => {
+  const navigator = useNavigate();
   const [isActive, setIsActive] = useState(false);
   const [clickComment, setClickComment] = useState(false);
   const [isFilterApplied, setIsFilterApplied] = useState(false);
@@ -15,8 +17,8 @@ const Product = () => {
     setIsActive(!isActive);
   };
 
-  const BackMain = () => {
-    window.location.replace("/");
+  const BackPage = () => {
+    navigator(-1);
   };
 
   const handleLinkTab = async () => {
@@ -53,7 +55,7 @@ const Product = () => {
   return (
     <S.ProductWrap>
       <S.PageInfo>
-        <S.Back src={BackPage} onClick={BackMain} />
+        <S.Back src={BackPage} onClick={BackPage} />
         <S.PageTitle>상세페이지</S.PageTitle>
       </S.PageInfo>
       <S.ProductInfo style={isFilterApplied ? { filter: "dropShadow(30% 30% 50% gray)" } : {}}>
@@ -76,7 +78,7 @@ const Product = () => {
             https://wowjety?-many.com/angrybird/
           </S.ProductLink>
           <S.ProductPrice>₩ 9,920</S.ProductPrice>
-          <S.nProductPrice>1/N : ₩ 4,960</S.nProductPrice>
+          <S.DivPrice>1/N : ₩ 4,960</S.DivPrice>
           <S.Account
             onClick={() => {
               handleAccountTab(Children);

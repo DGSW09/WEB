@@ -85,7 +85,7 @@ export const ProductInfo2 = styled.div`
 export const ProductTitle = styled.div`
   color: #585858;
   font-family: Pretendard-Variable;
-  font-size: 30px;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -98,7 +98,7 @@ export const ProductTitle = styled.div`
 export const ProductContent = styled.div`
   color: #888;
   font-family: Pretendard-Variable;
-  font-size: 20px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -110,7 +110,7 @@ export const ProductContent = styled.div`
 export const ProductLink = styled.div`
   color: #5849ff;
   font-family: Pretendard-Variable;
-  font-size: 20px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -123,7 +123,7 @@ export const ProductLink = styled.div`
 export const ProductPrice = styled.div`
   color: #000;
   font-family: Pretendard-Variable;
-  font-size: 45px;
+  font-size: 2.9rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -133,10 +133,10 @@ export const ProductPrice = styled.div`
   margin-top: 3vh;
 `;
 
-export const nProductPrice = styled.div`
+export const DivPrice = styled.div`
   color: #5849ff;
   font-family: Pretendard-Variable;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -151,7 +151,7 @@ export const Account = styled.div`
 
   color: #888;
   font-family: Pretendard-Variable;
-  font-size: 15px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -163,7 +163,7 @@ export const WriterName = styled.div`
 
   color: #888;
   font-family: Pretendard-Variable;
-  font-size: 15px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -183,7 +183,7 @@ export const CommonBtn = styled.button`
   color: #fff;
   text-align: center;
   font-family: Pretendard-Variable, sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

@@ -1,6 +1,6 @@
-import UserProfile from "../../img/profile.png";
-import Back from "../../img/back.png";
-import "../../styles/MoreInfoSignUp.css";
+import UserProfile from "../../../img/profile.png";
+import Back from "../../../img/back.png";
+import "../../../styles/MoreInfoSignUp.css";
 import { useEffect, useRef, useState } from "react";
 
 const MoreInfoSignUp = () => {

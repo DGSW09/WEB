@@ -1,13 +1,15 @@
-import "../../styles/profile.css";
-import Back from "../../img/back.png";
-import profile from "../../img/profile.png";
-// import productImage from "../../img/jetti.svg";
+import "../../../styles/profile.css";
+import Back from "../../../img/back.png";
+import profile from "../../../img/profile.png";
+import { useNavigate } from "react-router";
 import * as S from "./profile.style";
+import "./ProductData";
 // import { Productcontent } from "./productContent";
 
-const Profile = (data) => {
+const Profile = ({ productData }) => {
+  const navigator = useNavigate();
   const BackMain = () => {
-    window.location.replace("/");
+    navigator("/");
   };
 
   const LoadToEditProfile = () => {
@@ -15,7 +17,7 @@ const Profile = (data) => {
   };
 
   const LoadToProduct = () => {
-    window.location.replace("/product");
+    navigator("/proudct");
   };
 
   return (
@@ -34,13 +36,15 @@ const Profile = (data) => {
       </S.UserInfo>
       <S.UploadProductTitle>게시한 상품</S.UploadProductTitle>
       <S.UploadProduct onClick={LoadToProduct}>
-        {/* {data.map((key) => (
+        {productData.map((key) => (
           <div>
+            <img src={key.img} />
             <div>{key.title}</div>
             <div>{key.price}</div>
-            <div></div>
+            <div>{key.divprice}</div>
+            <div>{key.member}</div>
           </div>
-        ))} */}
+        ))}
       </S.UploadProduct>
     </S.ProfileWrap>
   );

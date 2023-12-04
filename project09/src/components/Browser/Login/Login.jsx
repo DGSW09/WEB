@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "../../styles/Login.css";
+import "../../../styles/Login.css";
 import SERVERURL from "../GitHide/ServerAdress";
 import { useNavigate } from "react-router";
 const DummyUser = {
@@ -135,6 +135,7 @@ const Login = () => {
         GradeInfo.value = null;
         ClassInfo.value = null;
       }
+      navigate("/");
     } else {
       NameInfo.value = null;
       GradeInfo.value = null;

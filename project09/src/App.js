@@ -1,18 +1,19 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignUp from "./components/SignUp/SignUp";
-import MoreInfoSignUp from "./components/SignUp/MoreInfoSignUp";
-import Login from "./components/Login/Login";
-import Main from "./components/Main/Main";
-import Search from "./components/Search/Search";
-import Product from "./components/Product/Product";
-import WriterProduct from "./components/WriterProduct/WriterProduct";
-import UploadProduct from "./components/UploadProduct/UploadProduct";
-// import Profile from "./components/Profile/profile";
-import EditProfile from "./components/EditProfile/EditProfile";
-import EditProduct from "./components/EditProduct/EditProduct";
-import ProductData from "./components/Profile/ProductData";
-import JoinPeoplePage from "./components/JoinPeoplePage/JoinPeoplePage";
+import SignUp from "./components/Browser/SignUp/SignUp";
+import MoreInfoSignUp from "./components/Browser/SignUp/MoreInfoSignUp";
+import Login from "./components/Browser/Login/Login";
+import Main from "./components/Browser/Main/Main";
+import Search from "./components/Browser/Search/Search";
+import Product from "./components/Browser/Product/Product";
+import WriterProduct from "./components/Browser/WriterProduct/WriterProduct";
+import ProductData from "./components/Browser/Profile/ProductData";
+import EditProfile from "./components/Browser/EditProfile/EditProfile";
+import UploadProduct from "./components/Browser/UploadProduct/UploadProduct";
+import EditProduct from "./components/Browser/EditProduct/EditProduct";
+import JoinPeoplePage from "./components/Browser/JoinPeoplePage/JoinPeoplePage";
+import { BrowserView, MobileView } from "react-device-detect";
+import DummyList from "./components/Browser/test/DummyList";
 // import axios from "axios";
 
 function App() {
@@ -26,22 +27,32 @@ function App() {
   // });
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/signUp" element={<SignUp />} />
-        <Route path="signUp/moreInfo" element={<MoreInfoSignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Main />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/product/writer" element={<WriterProduct />} />
-        <Route path="/profile" element={<ProductData />} />
-        <Route path="/profile/edit" element={<EditProfile />} />
-        <Route path="/product/upload" element={<UploadProduct />} />
-        <Route path="product/edit" element={<EditProduct />} />
-        <Route path="/product/join" element={<JoinPeoplePage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserView>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/signUp" element={<SignUp />} />
+            <Route path="signUp/moreInfo" element={<MoreInfoSignUp />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Main />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/product/writer" element={<WriterProduct />} />
+            <Route path="/profile" element={<ProductData />} />
+            <Route path="/profile/edit" element={<EditProfile />} />
+            <Route path="/product/upload" element={<UploadProduct />} />
+            <Route path="product/edit" element={<EditProduct />} />
+            <Route path="/product/join" element={<JoinPeoplePage />} />
+            <Route path="/test" element={<DummyList />} />
+          </Routes>
+        </BrowserRouter>
+      </BrowserView>
+      <MobileView>
+        <BrowserRouter>
+          <Routes></Routes>
+        </BrowserRouter>
+      </MobileView>
+    </>
   );
 }
 

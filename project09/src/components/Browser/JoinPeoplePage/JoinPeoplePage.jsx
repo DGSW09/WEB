@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/pageJoinPeople.css";
-import getOutImg from "../../img/getOut.svg";
-import back from "../../img/back.png";
+import "../../../styles/pageJoinPeople.css";
+import getOutImg from "../../../img/getOut.svg";
+import back from "../../../img/back.png";
 
 const JoinPeoplePage = () => {
   const BackMain = () => {

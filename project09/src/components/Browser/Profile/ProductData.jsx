@@ -1,5 +1,5 @@
 import Profile from "./profile";
-import productImage from "../../img/jetti.svg";
+import productImage from "../../../img/jetti.svg";
 
 const data = [
   {
