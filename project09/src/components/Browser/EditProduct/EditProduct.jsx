@@ -19,7 +19,7 @@ const EditProduct = () => {
         <img src={Back} className='back' onClick={BackMain} alt=""/>
         <div className='PageTitle'>게시물 수정</div>
       </div>
-      <form method='get'>
+      <form method='get' action="http://10.20.132">
         <div className='UploadProductInfo'>
           <input type='file' style={{ display: "none" }} ref={FileSelect} />
           <button className='SelectImage' onClick={() => FileSelect.current.click()}>

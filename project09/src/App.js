@@ -11,9 +11,8 @@ import ProductData from "./components/Browser/Profile/ProductData";
 import EditProfile from "./components/Browser/EditProfile/EditProfile";
 import UploadProduct from "./components/Browser/UploadProduct/UploadProduct";
 import EditProduct from "./components/Browser/EditProduct/EditProduct";
-import JoinPeoplePage from "./components/Browser/JoinPeoplePage/JoinPeoplePage";
+import JoinPeoplePage from "./components/Browser/JoinPeoplePage/Join'PeoplePage";
 import { BrowserView, MobileView } from "react-device-detect";
-import DummyList from "./components/Browser/test/DummyList";
 // import axios from "axios";
 
 function App() {
@@ -43,7 +42,6 @@ function App() {
             <Route path="/product/upload" element={<UploadProduct />} />
             <Route path="product/edit" element={<EditProduct />} />
             <Route path="/product/join" element={<JoinPeoplePage />} />
-            <Route path="/test" element={<DummyList />} />
           </Routes>
         </BrowserRouter>
       </BrowserView>
